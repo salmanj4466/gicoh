@@ -1,0 +1,69 @@
+
+
+.hero-section {
+	padding: 300px 0;
+}
+
+
+.hero-section h4 {
+	font-weight: 500;
+	font-size: 32px;
+	line-height: 50px;
+}
+
+.hero-section h4 span {
+	font-weight: 700;
+}
+
+
+canvas {
+	/*opacity: .4;*/
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100% !important;
+	height: 725px !important;
+}
+
+.main-header {
+	z-index: 9999;
+}
+
+
+#changingText {
+	color: #ff8c00;
+	border-right: 2px solid #fff;
+	animation: cursoranim 1s linear infinite;
+}
+
+@keyframes cursoranim {
+	50% {
+		border-right: 2px solid #fff;
+	}
+}
+
+
+.page-header {
+	padding: 60px 0;
+	background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: 50% 61% !important;
+}
+
+.page-header h1 {
+	font-weight: 600;
+	font-size: 40px;
+}
+
+.page-header p {
+	margin-bottom: 5px;
+}
+
+
+.navbar-light .main-menu li.active a.nav-link {
+	color: #ff8c00;
+}
+
+.main-header .btn {
+	    padding: 0.5rem 1rem;
+}
