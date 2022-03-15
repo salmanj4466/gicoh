@@ -1,9 +1,7 @@
 @charset "UTF-8";
 /*================
- Template Name: Quiety - Software Technology & IT Solutions Saas HTML Template
- Description: Quiety creative Saas, software technology, Saas agency & business Bootstrap 5 Html template. It is best and famous software company and Saas website template.
- Version: 1.0
- Author: https://themeforest.net/user/themetags
+ Template Name: GICOH - Software Technology & IT Solutions Saas HTML Template
+
  =======================*/
 /*!
  * Bootstrap v5.0.0-beta3 (https://getbootstrap.com/)
@@ -49053,7 +49051,7 @@ h1,
 h2,
 h3,
 h4 {
-  font-weight: 700;
+  font-weight: 600;
 }
 
 /* line 125, src/assets/scss/custom/_style.scss */
@@ -50308,7 +50306,7 @@ select:invalid {
 /* line 1029, src/assets/scss/custom/_style.scss */
 .dropdown-grid.width-half {
   grid-template-columns: 1fr;
-  width: 320px;
+  width: 210px;
 }
 
 /* line 1034, src/assets/scss/custom/_style.scss */
@@ -50391,7 +50389,7 @@ select:invalid {
 
 /* line 1085, src/assets/scss/custom/_style.scss */
 .main-menu li a.nav-link {
-  padding: 0.85rem 1.5rem;
+  padding: 0.85rem 1.3rem;
   font-size: 15px;
   font-weight: 500;
   position: relative;
