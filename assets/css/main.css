@@ -49022,7 +49022,7 @@ h6 {
   /* line 97, src/assets/scss/custom/_style.scss */
   .h2,
   h2 {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
   }
 }
 
@@ -50693,7 +50693,7 @@ select:invalid {
 
 /* line 1294, src/assets/scss/custom/_style.scss */
 .section-heading {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 @media (min-width: 991px) and (max-width: 1199px) {
@@ -51837,10 +51837,11 @@ li.setup-process-item:not(:last-child):before {
 
 /* line 2116, src/assets/scss/custom/_style.scss */
 .feature-icon {
-  width: 65px;
-  height: 65px;
+  width: 85px;
+  height: 70px;
   line-height: 65px;
   text-align: center;
+  margin-bottom: 10px;
 }
 
 /* line 2122, src/assets/scss/custom/_style.scss */
