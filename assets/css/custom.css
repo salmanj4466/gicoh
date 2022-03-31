@@ -408,12 +408,12 @@ canvas {
  }
 
   .services-section .feature-icon.bg-primary {
-        background-color: #175cff24 !important;
+        background-color: #175cff1f !important;
             color: #0d6efd;
  }
 
    .services-section .feature-icon.bg-danger {
-        background-color: #f2576729 !important;
+        background-color: #f257671f !important;
             color: #f25767;
  }
 
@@ -450,4 +450,8 @@ canvas {
         color: #212529;
         font-size: 1.17em;
     margin-bottom: 12px;
+}
+
+.contact-us-form iframe {
+  width: 100%;
 }

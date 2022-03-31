@@ -62,7 +62,7 @@
 /* line 50, src/assets/scss/vendors/bootstrap.min.css */
 body {
   margin: 0;
-  font-family: var(--bs-font-sans-serif);
+  font-family: var(--bs-font-monospace);
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -750,7 +750,7 @@ progress {
 .container-sm,
 .container-xl,
 .container-xxl {
-  width: 100%;
+  width: 100% !important;
   padding-right: var(--bs-gutter-x, 0.75rem);
   padding-left: var(--bs-gutter-x, 0.75rem);
   margin-right: auto;
@@ -50546,6 +50546,7 @@ select:invalid {
   box-shadow: none;
   border: none;
   border-radius: 20px;
+  font-size: 15px;
 }
 
 /* line 1193, src/assets/scss/custom/_style.scss */
@@ -51856,7 +51857,8 @@ li.setup-process-item:not(:last-child):before {
 
 /* line 2125, src/assets/scss/custom/_style.scss */
 .feature-icon img {
-  padding: 15px;
+  padding: 12px;
+  width: 100%;
 }
 
 /* line 2129, src/assets/scss/custom/_style.scss */
