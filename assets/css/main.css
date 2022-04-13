@@ -50468,7 +50468,7 @@ select:invalid {
   -ms-flex-align: center;
   align-items: center;
   text-decoration: none;
-  padding: 0.55rem 0.5rem !important;
+  padding: 0.55rem 0.2rem !important;
   -webkit-transition: all 0.3s ease;
   color: #575757;
   transition: all 0.3s ease;
@@ -50496,7 +50496,7 @@ select:invalid {
 
 /* line 1158, src/assets/scss/custom/_style.scss */
 .dropdown-grid-item a span {
-  font-size: 14px;
+  font-size: 16px;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   color: #ff8c00;
