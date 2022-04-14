@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="assets/css/main.css" />
     <!--custom css start-->
     <link rel="stylesheet" href="assets/css/custom.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
 </head>
 <body>
@@ -51,7 +52,7 @@
                             <li><a href="gssm.html" class="nav-link">GSSM</a></li>
                             <li><a href="grms.html" class="nav-link">GRMS</a></li>
                             <li><a href="gerp.html" class="nav-link">GERP</a></li>
-                            <li><a href="gfoods.html" class="nav-link">GDeliver</a></li>
+                            <li><a href="gdeliver.html" class="nav-link">GDeliver</a></li>
                         </ul>
                     </div>
 
@@ -156,11 +157,11 @@
                     <div class="col-lg-5">
                         <div class="hero-content-wrap">
                             <h5 class="text-warning" data-aos="fade-up" data-aos-delay="100">GERP</h5>
-                            <h2 class="fw-bold" data-aos="fade-up" data-aos-delay="150">Gicoh Enterprise Resource Planning System</h2>
-                            <p class="lead mt-3" style="font-size: 16px;" data-aos="fade-up" data-aos-delay="200">GERP (Gicoh Enterprise Resource Planning System) is our online ERP solution specifically designed for FMCGs . It includes modules like Accounting, Buying, Selling, Stock, Manufacturing, Human Resource and CRM etc and can be integrated with GRMS, which is our retail management system. Fields that you create in it, become instantly available as an API point in the interface of the ERP.</p>
+                            <h2 class="fw-bold" data-aos="fade-up" data-aos-delay="150">GICOH Enterprise Resource Planning System</h2>
+                            <p class="lead mt-3" style="font-size: 16px;" data-aos="fade-up" data-aos-delay="200">GERP (Gicoh Enterprise Resource Planning System) is our online ERP solution. It includes modules like Accounting, Procurement, Selling, Stock, Manufacturing, Human Resource and CRM etc and can be integrated with GRMS, which is our retail management system. Fields that you create in it, become instantly available as an API point in the interface of the ERP.</p>
                             <div class="action-btns mt-4 pt-2" data-aos="fade-left" data-aos-delay="100">
                                 <!-- <a href="javascript:void(0)" class="btn btn-primary me-2">Download Brochure</a> -->
-                                <a href="about-us.html" class="btn btn-outline-light"> Schedule Demo</a>
+                                <a target="_blank" href="http://crm.gicoh.com/schedule-demo" class="btn btn-outline-light"> Schedule Demo</a>
                             </div>
                         </div>
 
@@ -192,7 +193,7 @@
 
                             <div class="icon-content">
                                 <h3 class="h5 mb-2">User Friendly Interface</h3>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                <p>User friendly interface, LDAP for single login, simplified inventory management, user and guest chats etc.
                                 </p>
                             </div>
                             <div class="process-icon-2 border border-2 rounded-custom bg-white ms-4 mt-2">
@@ -203,7 +204,7 @@
 
                             <div class="icon-content">
                                 <h3 class="h5 mb-2">Dynamic Reporting</h3>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                <p>Group level consolidated reports. Dynamic report generation with an in-built report builder. 
                                 </p>
                             </div>
                             <div class="process-icon-2 border border-2 rounded-custom bg-white ms-4 mt-2">
@@ -214,7 +215,7 @@
 
                             <div class="icon-content">
                                 <h3 class="h5 mb-2">Built in Dashboards</h3>
-                                <p class="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                <p class="mb-0">Dashboards for at-a-glance view of relevant business processes available in ERP.
                                 </p>
                             </div>
                             <div class="process-icon-2 border border-2 rounded-custom bg-white ms-4 mt-2">
@@ -235,8 +236,8 @@
                               <i>  <img src="assets/img/gerp/icon/inventory.png" alt="inventory"> </i>
                             </div>
                             <div class="icon-content">
-                                <h3 class="h5 mb-2">Inventory Management</h3>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                <h3 class="h5 mb-2">Core Modules</h3>
+                                <p>Accounting, Stock, Assets, Projects, Manufacturing, Selling, Buying, HR, CRM etc.
                                 </p>
                             </div>
                         </li>
@@ -245,8 +246,8 @@
                               <i>  <img src="assets/img/gerp/icon/tracking.png" alt="tracking"> </i>
                             </div>
                             <div class="icon-content">
-                                <h3 class="h5 mb-2">Record Tracking</h3>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                <h3 class="h5 mb-2">One off Implementation Cost </h3>
+                                <p>Best value for money for self-hosted solution as compared to other ERPs as no extra licensing fee for unlimited no of users
                                 </p>
                             </div>
                         </li>
@@ -255,8 +256,8 @@
                               <i>  <img src="assets/img/gerp/icon/users.png" alt="users"> </i>
                             </div>
                             <div class="icon-content">
-                                <h3 class="h5 mb-2">Unlimited No. of Users</h3>
-                                <p class="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                <h3 class="h5 mb-2">App Integrations</h3>
+                                <p class="mb-0">Integration with Payment Panels, Cloud Drives and Ecommerce Platforms etc.
                                 </p>
                             </div>
                         </li>
@@ -310,34 +311,32 @@
             </div>
             <div class="row" data-aos="fade-up" data-aos-delay="200">
                 <div class="col-md-12">
-                    <div id="industries" class="owl-carousel">
-                 
-                        <div class="item">
-                            <img src="assets/img/mobile-1.png" alt="mobile">
-                        </div>
+                    <!-- Slider main container -->
+                    <div class="swiper-container text-center">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="assets/img/gssm/mobile-1.png" alt="mobile">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/img/gssm/mobile-2.png" alt="mobile">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/img/gssm/mobile-3.png" alt="mobile">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/img/gssm/mobile-4.png" alt="mobile">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/img/gssm/mobile-5.png" alt="mobile">
+                            </div>
 
-                        <div class="item">
-                            <img src="assets/img/mobile-1.png" alt="mobile">
                         </div>
-
-                        <div class="item">
-                            <img src="assets/img/mobile-1.png" alt="mobile">
-                        </div>
-
-                        <div class="item">
-                            <img src="assets/img/mobile-1.png" alt="mobile">
-                        </div>
-
-                        <div class="item">
-                            <img src="assets/img/mobile-1.png" alt="mobile">
-                        </div>
-                          <div class="item">
-                            <img src="assets/img/mobile-1.png" alt="mobile">
-                        </div>
-                        
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
                     </div>
                 </div>
-              
+
             </div>
         </div>
     </section>
@@ -449,12 +448,7 @@
                             <img width="80" src="assets/img/logo.png" alt="logo" class="img-fluid logo-color" />
                         </div>
                         <p>
-                            GICOH is a global software development company with about 14 years of
-                            experience. We provide full-cycle services in the areas of advanced web
-                            development, enterprise applications, mobile apps, web portal, e-learning,
-                            e-commerce, cloud infrastructur and servics, specialized products and solution
-                            for resource planning, sales management and consulting services to mid and
-                            large sized enterprises.
+                           GICOH in a Nutshell: We are passionate about delivering strong, robust software solutions to our clients. We specialize in enterprise level systems that can solve many of the problems that businesses face as they grow and adapt to a changing marketplace.
                         </p>
                     </div>
                 </div>
@@ -561,9 +555,8 @@
 <script src="assets/js/vendors/parallax.min.js"></script>
 <script src="assets/js/vendors/aos.js"></script>
 <script src="assets/js/app.js"></script>
-<script src="assets/js/canvasScript.js" type="text/javascript" defer="defer"></script>
-<script defer src="https://intetics.com/wp-content/cache/autoptimize/js/autoptimize_30065744c8ec0804a4bebcca17458f1e.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
 <script>
             //you can change the text, but you need to keep same format [yourtext, color];
@@ -630,23 +623,55 @@
                     },
                 },
             });
-        </script>
+        
+        
 
-        <script id="jquery-core-js-extra">
-            var glob = {
-                // theme_path: "https:\/\/intetics.com\/wp-content\/themes\/intetics_theme",
-                // theme_ver: "1.10.38",
-                // ajaxurl: "https:\/\/intetics.com\/wp-admin\/admin-ajax.php",
-                nonce: "cc5d2a5c65",
-                sliders_autorotate_time: "5000",
-                general_nav_prev: { post_type_name: "", title: "", link: "" },
-                general_nav_next: { post_type_name: "", title: "", link: "" },
-                disallow_key_navigation: "false",
-                current_page_section_slug: "false",
-                current_page_slug: "false",
-                cf7_custom_error_messages:
-                '{"default_message":"Invalid field value","required_first-name":"Please enter your first name","required_last-name":"Please enter your last name","required_your-name":"Please enter your full name","required_full-name":"Please enter your full name","required_your-company":"Please enter your company","required_your-position":"Please enter your position","required_your-address":"Please enter your address","required_your-city":"Please enter your city","required_your-state":"Please enter your state","required_your-email":"Please enter your email","required_business-email":"Please enter your business email","required_your-phone":"Please enter your phone number","required_your-international-phone":"Please enter your phone number","required_your-message":"Please enter your request","invalid_your-email":"Please enter a valid email","invalid_business-email":"Please enter a valid business address","invalid_your-phone":"Please enter a valid phone number","too_short":"Input value is too short. Min length is %1$s symbols","too_long":"Input value is too long. Max length is %1$s symbols","has_html":"Please remove all HTML tags from this field","upload_file_too_large":"File exceeds the maximum upload size"}',
-            };
-        </script>
+            const swiper = new Swiper('.swiper-container', {
+                effect: 'coverflow',
+                centeredSlides: true,
+                slidesPerView: 1,
+                loop: true,
+                speed: 2000,
+                autoplay: true,
+
+                autoplay: {
+                    delay: 3000,
+                },
+
+                coverflowEffect: {
+                    rotate: 35,
+                    stretch: 0,
+                    depth: 100,
+                    modifier: 1,
+                    slideShadows: true,
+                },
+
+                breakpoints: {
+                    320: {
+                        slidesPerView: 1,
+                    },
+                    560: {
+                        slidesPerView: 3,
+                    },
+                    990: {
+                        slidesPerView: 4,
+                    }
+                },
+
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+
+            </script>
+
+
+
     </body>
     </html>
