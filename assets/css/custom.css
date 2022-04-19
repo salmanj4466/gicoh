@@ -23,6 +23,17 @@
 	font-weight: 700;
 }
 
+.swiper-button-prev, .swiper-rtl .swiper-button-next,
+.swiper-button-next, .swiper-rtl .swiper-button-prev {
+    background: transparent;
+    box-shadow: none;
+}
+
+.work-process-list .icon-content {
+  order: 2;
+  text-align: left;
+}
+
 
 canvas {
 	/*opacity: .4;*/
@@ -286,17 +297,18 @@ canvas {
 
 
 #industries .item {
-    padding: 15px 10px;
+    padding: 10px 10px;
 }
 
 #industries .item h3 {
     font-weight: 500;
     min-height: 25px;
     font-size: 18px;
+    margin-bottom: 0;
 }
 
 #industries .item .cta-card  {  
-  padding: 30px 20px 35px;
+  padding: 25px 20px 30px;
   border-radius: 0;
   border: 1px solid #e0e0e0b0;
 }
@@ -481,7 +493,8 @@ footer strong {
   color: #000;
 }
 
-.grms-gallery .swiper-slide img {
+.grms-gallery .swiper-slide img,
+.gerp-product .swiper-slide img {
     max-width: 380px !important;
     height: auto;
     }
@@ -539,6 +552,15 @@ footer strong {
 .page-banner p {
   font-size: 18px !important;
       line-height: 26px;
+}
+
+.swiper-button-prev, .swiper-rtl .swiper-button-next {
+    left: 0;
+    }
+
+    .swiper-button-next, .swiper-rtl .swiper-button-prev {
+    right: 0;
+
 }
 
 
