@@ -54425,7 +54425,7 @@ i {
 .footer-single-col h3 {
   font-size: 18px;
   font-weight: 600;
-  margin-bottom: 36px;
+  margin-bottom: 30px;
 }
 
 /* line 3905, src/assets/scss/custom/_style.scss */
@@ -54474,7 +54474,8 @@ i {
 
 .footer-light .footer-single-col p {
   font-size: 14px;
-      margin-top: 30px;
+      margin-top: 12px;
+      text-align: justify;
 }
 
 .footer-single-col i {
