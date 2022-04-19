@@ -481,6 +481,11 @@ footer strong {
   color: #000;
 }
 
+.grms-gallery .swiper-slide img {
+    max-width: 380px !important;
+    height: auto;
+    }
+
 @media (max-width: 1200px) {
   .services-section .feature-card {
     padding: 25px !important;
