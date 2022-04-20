@@ -23,38 +23,89 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
 </head>
 <body class="home-page">
-<!--preloader start-->
-<div id="preloader">
-  <div class="preloader-wrap">
-    <img src="assets/img/logo.png" alt="logo" class="img-fluid preloader-icon" />
-    <div class="loading-bar"></div>
+  <!--preloader start-->
+  <div id="preloader">
+    <div class="preloader-wrap">
+      <img src="assets/img/logo.png" alt="logo" class="img-fluid preloader-icon" />
+      <div class="loading-bar"></div>
+    </div>
   </div>
-</div>
-<!--preloader end-->
-<div class="main-wrapper">
-  <!--header start-->
-  <header class="main-header position-absolute w-100">
-    <nav class="navbar navbar-expand-xl navbar-dark sticky-header">
-      <div class="container d-flex align-items-center justify-content-lg-between position-relative">
-        <a href="index.html" class="navbar-brand d-flex align-items-center mb-md-0 text-decoration-none py-0">
-          <img width="70" src="assets/img/logo-white.png" alt="logo" class="img-fluid logo-white" />
-          <img width="60" src="assets/img/logo.png" alt="logo" class="img-fluid logo-color" />
-        </a>
-        <a class="navbar-toggler position-absolute right-0 border-0" href="#offcanvasWithBackdrop" role="button">
-          <span class="far fa-bars" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop" aria-controls="offcanvasWithBackdrop"></span>
-        </a>
-        <div class="clearfix"></div>
-        <div class="collapse navbar-collapse justify-content-start">
-          <ul class="nav justify-content-start main-menu">
-           <li><a href="gerp.html" class="nav-link">GERP</a></li>
-           <li><a href="gssm.html" class="nav-link">GSSM</a></li>
-           <li><a href="grms.html" class="nav-link">GRMS</a></li>
-           <li><a href="gdeliver.html" class="nav-link">GDeliver</a></li>
-         </ul>
-       </div>
+  <!--preloader end-->
+  <div class="main-wrapper">
+    <!--header start-->
+    <header class="main-header position-absolute w-100">
+      <nav class="navbar navbar-expand-xl navbar-dark sticky-header">
+        <div class="container d-flex align-items-center justify-content-lg-between position-relative">
+          <a href="index.html" class="navbar-brand d-flex align-items-center mb-md-0 text-decoration-none py-0">
+            <img width="70" src="assets/img/logo-white.png" alt="logo" class="img-fluid logo-white" />
+            <img width="60" src="assets/img/logo.png" alt="logo" class="img-fluid logo-color" />
+          </a>
+          <a class="navbar-toggler position-absolute right-0 border-0" href="#offcanvasWithBackdrop" role="button">
+            <span class="far fa-bars" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop" aria-controls="offcanvasWithBackdrop"></span>
+          </a>
+          <div class="clearfix"></div>
+          <div class="collapse navbar-collapse justify-content-start">
+            <ul class="nav justify-content-start main-menu">
+             <li><a href="gerp.html" class="nav-link">GERP</a></li>
+             <li><a href="gssm.html" class="nav-link">GSSM</a></li>
+             <li><a href="grms.html" class="nav-link">GRMS</a></li>
+             <li><a href="gdeliver.html" class="nav-link">GDeliver</a></li>
+           </ul>
+         </div>
 
-       <div class="collapse navbar-collapse justify-content-end">
-        <ul class="nav justify-content-end main-menu pe-4">
+         <div class="collapse navbar-collapse justify-content-end">
+          <ul class="nav justify-content-end main-menu pe-4">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Services
+              </a>
+              <div class="dropdown-menu border-0 rounded-custom shadow py-0 bg-white">
+                <div class="dropdown-grid rounded-custom width-half">
+                  <div class="dropdown-grid-item">
+                   <a href="cloud-services.html" class="dropdown-link">
+                    <span class="me-2"><i class="far fa-cloud"></i></span> Cloud and Infrastructutre development
+                  </a>
+                  <a href="web-development.html" class="dropdown-link">
+                   <span class="me-2"><i class="far fa-desktop"></i></span> Web Development
+                 </a>
+                 <a href="customized-solution.html" class="dropdown-link">
+                   <span class="me-2"><i class="far fa-gears"></i></span> Customized solution Consultancy
+                 </a>
+                 <a href="iot-solution.html" class="dropdown-link">
+                   <span class="me-2"><img width="18" src="assets/img/iot-icon.png" alt="iot"></span> IoT Solution
+                 </a>
+                 <a href="mobile-app.html" class="dropdown-link">
+                  <span class="me-2"><i class="far fa-mobile"></i></span> Mobile App  Development
+                </a>
+
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li><a href="about-us.html" class="nav-link">About Us</a></li>
+        <li><a href="contact-us.html" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+    <div class="action-btns text-end me-5 me-lg-0 d-none d-md-block d-lg-block">
+      <a href="tel:00923222266449" class="btn btn-primary"><i class="far fa-phone me-1"></i> +92-322-2266449</a>
+    </div>
+    <!--offcanvas menu start-->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasWithBackdrop">
+      <div class="offcanvas-header d-flex align-items-center mt-4">
+        <a href="index.html" class="d-flex align-items-center mb-md-0 text-decoration-none">
+          <img width="80" src="assets/img/logo.png" alt="logo" class="img-fluid ps-2" />
+        </a>
+        <button type="button" class="close-btn text-danger" data-bs-dismiss="offcanvas" aria-label="Close">
+          <i class="far fa-close"></i>
+        </button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="nav col-12 col-md-auto justify-content-center main-menu">
+          <li><a href="gssm.html" class="nav-link">GSSM</a></li>
+          <li><a href="grms.html" class="nav-link">GRMS</a></li>
+          <li><a href="gerp.html" class="nav-link">GERP</a></li>
+          <li><a href="gfoods.html" class="nav-link">GDeliver</a></li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Services
@@ -69,78 +120,27 @@
                  <span class="me-2"><i class="far fa-desktop"></i></span> Web Development
                </a>
                <a href="customized-solution.html" class="dropdown-link">
-                 <span class="me-2"><i class="far fa-gears"></i></span> Customized solution Consultancy
+                 <span class="me-2"><i class="far fa-gears"></i></span>  Customized Solution Consultancy
                </a>
                <a href="iot-solution.html" class="dropdown-link">
-                 <span class="me-2"><img width="18" src="assets/img/iot-icon.png" alt="iot"></span> IoT Solution
+                 <span class="me-2"><img width="18" src="assets/img/iot-icon.png" alt="iot"></span>  IoT Solution
                </a>
                <a href="mobile-app.html" class="dropdown-link">
-                <span class="me-2"><i class="far fa-mobile"></i></span> Mobile App  Development
+                <span class="me-2"><i class="far fa-mobile"></i></span> Mobile Application  Development
               </a>
-
             </div>
           </div>
         </div>
       </li>
-
       <li><a href="about-us.html" class="nav-link">About Us</a></li>
+
       <li><a href="contact-us.html" class="nav-link">Contact</a></li>
+
     </ul>
-  </div>
-  <div class="action-btns text-end me-5 me-lg-0 d-none d-md-block d-lg-block">
-    <a href="tel:00923222266449" class="btn btn-primary"><i class="far fa-phone me-1"></i> +92-322-2266449</a>
-  </div>
-  <!--offcanvas menu start-->
-  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasWithBackdrop">
-    <div class="offcanvas-header d-flex align-items-center mt-4">
-      <a href="index.html" class="d-flex align-items-center mb-md-0 text-decoration-none">
-        <img width="80" src="assets/img/logo.png" alt="logo" class="img-fluid ps-2" />
-      </a>
-      <button type="button" class="close-btn text-danger" data-bs-dismiss="offcanvas" aria-label="Close">
-        <i class="far fa-close"></i>
-      </button>
+    <div class="action-btns mt-4 ps-3">
+      <a href="tel:0322-222777" class="btn btn-primary"><i class="far fa-phone me-1"></i> 0322-2227777</a>
     </div>
-    <div class="offcanvas-body">
-      <ul class="nav col-12 col-md-auto justify-content-center main-menu">
-        <li><a href="gssm.html" class="nav-link">GSSM</a></li>
-        <li><a href="grms.html" class="nav-link">GRMS</a></li>
-        <li><a href="gerp.html" class="nav-link">GERP</a></li>
-        <li><a href="gfoods.html" class="nav-link">GDeliver</a></li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Services
-          </a>
-          <div class="dropdown-menu border-0 rounded-custom shadow py-0 bg-white">
-            <div class="dropdown-grid rounded-custom width-half">
-              <div class="dropdown-grid-item">
-               <a href="cloud-services.html" class="dropdown-link">
-                <span class="me-2"><i class="far fa-cloud"></i></span> Cloud and Infrastructutre development
-              </a>
-              <a href="web-development.html" class="dropdown-link">
-               <span class="me-2"><i class="far fa-desktop"></i></span> Web Development
-             </a>
-             <a href="customized-solution.html" class="dropdown-link">
-               <span class="me-2"><i class="far fa-gears"></i></span>  Customized Solution Consultancy
-             </a>
-             <a href="iot-solution.html" class="dropdown-link">
-               <span class="me-2"><img width="18" src="assets/img/iot-icon.png" alt="iot"></span>  IoT Solution
-             </a>
-             <a href="mobile-app.html" class="dropdown-link">
-              <span class="me-2"><i class="far fa-mobile"></i></span> Mobile Application  Development
-            </a>
-          </div>
-        </div>
-      </div>
-    </li>
-    <li><a href="about-us.html" class="nav-link">About Us</a></li>
-
-    <li><a href="contact-us.html" class="nav-link">Contact</a></li>
-
-  </ul>
-  <div class="action-btns mt-4 ps-3">
-    <a href="tel:0322-222777" class="btn btn-primary"><i class="far fa-phone me-1"></i> 0322-2227777</a>
   </div>
-</div>
 </div>
 <!--offcanvas menu end-->
 </div>
@@ -192,10 +192,8 @@
                   <div class="row justify-content-center">
                     <div class="col-12 col-xl-11">
                       <div class="row">
-
-
                         <div class="col-xl-6 col-lg-6 col-md-12 mb-4" data-aos="fade-up" data-aos-delay="100">
-                          <div class="home-case">
+                          <a href="gerp.html" class="home-case">
                             <div class="home-case__wrap">
                               <div class="home-case__layer">
                                 <div class="home-case__title fw-700">
@@ -207,7 +205,7 @@
                                   Procurement, Selling, Stock, Manufacturing, Human
                                   Resource, CRM etc and can be integrated with RMS / POS
                                 </p>
-                                <a href="gerp.html"><span class="link-more fw-700">Learn More</span></a>
+                                <span class="link-more fw-700">Learn More</span>
                               </div>
                               <div class="home-case__video">
                                 <img
@@ -235,374 +233,377 @@
                                   </svg>
                                 </div>
                               </div>
+
                             </div>
-                          </div>
+                          </a>
                         </div>
 
                         <div class="col-xl-6 col-lg-6 col-md-12 mb-4" data-aos="fade-up" data-aos-delay="50">
-                          <div class="home-case">
-                            <div class="home-case__wrap">
-                              <div class="home-case__layer">
-                                <div class="home-case__title fw-700">
-                                  <h1 class="home-case__title fw-700">GSSM</h1>
-                                  <span>Secondary Sales Management</span>
-                                </div>
-                                <p class="fw-500">An application that helps you control financials,
-                                  staff operations, live tracking (sales staff
-                                  delivery staff), order management (from
-                                  distributor to company and from shop to
-                                distribution) and distributors performance. </p>
-                                <a href="gssm.html"> <span class="link-more fw-700">Learn More</span> </a>
+                          <a href="gssm.html" class="home-case">
+                           <div class="home-case__wrap">
+                            <div class="home-case__layer">
+                              <div class="home-case__title fw-700">
+                                <h1 class="home-case__title fw-700">GSSM</h1>
+                                <span>Secondary Sales Management</span>
                               </div>
-                              <div class="home-case__video">
-                                <img
-                                width="642"
-                                height="420"
-                                src="//:0"
-                                class="attachment-full size-full intetics-lazy-image lazyload"
-                                alt="home-case_1"
-                                loading="lazy"
-                                data-lazy-thumbnail=""
-                                srcset="assets/img/gssm.jpg"
-                                sizes="(max-width: 642px) 100vw, 642px"
-                                data-srcset="assets/img/gssm.jpg"
-                                data-sizes="(max-width: 642px) 100vw, 642px"
-                                data-hw-ratio="65.4205607477%"
-                                data-lazy="assets/img/gssm.jpg"
-                                />
-                                <video preload="none" muted loop playsinline src="assets/img/gssm.mp4"></video>
-                                <div class="home-case__video-layer">
-                                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 340.54 246.16">
-                                    <path class="svg-hover" d="M195,141,0,0V245H163Z" />
-                                    <path class="third-triangle" d="M339,245H255.5V184.5Z" fill="#3EA2F5" />
-                                    <path class="second-triangle" d="M162,245H256V185Z" fill="#41C7CF" />
-                                    <path class="first-triangle" d="M256,185l-63-45.5L163,245Z" fill="#AED8FB" />
-                                  </svg>
-                                </div>
+                              <p class="fw-500">An application that helps you control financials,
+                                staff operations, live tracking (sales staff
+                                delivery staff), order management (from
+                                distributor to company and from shop to
+                              distribution) and distributors performance. </p>
+                              <span class="link-more fw-700">Learn More</span>
+                            </div>
+                            <div class="home-case__video">
+                              <img
+                              width="642"
+                              height="420"
+                              src="//:0"
+                              class="attachment-full size-full intetics-lazy-image lazyload"
+                              alt="home-case_1"
+                              loading="lazy"
+                              data-lazy-thumbnail=""
+                              srcset="assets/img/gssm.jpg"
+                              sizes="(max-width: 642px) 100vw, 642px"
+                              data-srcset="assets/img/gssm.jpg"
+                              data-sizes="(max-width: 642px) 100vw, 642px"
+                              data-hw-ratio="65.4205607477%"
+                              data-lazy="assets/img/gssm.jpg"
+                              />
+                              <video preload="none" muted loop playsinline src="assets/img/gssm.mp4"></video>
+                              <div class="home-case__video-layer">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 340.54 246.16">
+                                  <path class="svg-hover" d="M195,141,0,0V245H163Z" />
+                                  <path class="third-triangle" d="M339,245H255.5V184.5Z" fill="#3EA2F5" />
+                                  <path class="second-triangle" d="M162,245H256V185Z" fill="#41C7CF" />
+                                  <path class="first-triangle" d="M256,185l-63-45.5L163,245Z" fill="#AED8FB" />
+                                </svg>
                               </div>
                             </div>
-                          </div>
-                        </div>
 
-                        <div class="col-xl-6 col-lg-6 col-md-12 mb-4" data-aos="fade-up" data-aos-delay="150">
-                          <div class="home-case">
-                            <div class="home-case__wrap">
-                              <div class="home-case__layer">
-                                <div class="home-case__title fw-700">
-                                  <h1 class="home-case__title fw-700">GRMS</h1>
-                                  <span> Retail Management System</span>
-                                </div>
-                                <p class="fw-500">GRMS is an ERP integrated solution for Retail Chain
-                                  Stores. Especially for those looking to manage their
-                                  current physical stores or franchise outlets and aiming
-                                to expand their businesses further.</p>
-                                <a href="grms.html"><span class="link-more fw-700">Learn More</span></a>
-                              </div>
-                              <div class="home-case__video">
-                                <img
-                                width="642"
-                                height="420"
-                                src="//:0"
-                                class="attachment-full size-full intetics-lazy-image lazyload"
-                                alt="home-case_1"
-                                loading="lazy"
-                                data-lazy-thumbnail=""
-                                srcset="assets/img/rms.jpg"
-                                sizes="(max-width: 642px) 100vw, 642px"
-                                data-srcset="assets/img/rms.jpg"
-                                data-sizes="(max-width: 642px) 100vw, 642px"
-                                data-hw-ratio="65.4205607477%"
-                                data-lazy="assets/img/rms.jpg"
-                                />
-                                <video preload="none" muted loop playsinline src="assets/img/rms.mp4"></video>
-                                <div class="home-case__video-layer">
-                                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 340.54 246.16">
-                                    <path class="svg-hover" d="M195,141,0,0V245H163Z" />
-                                    <path class="third-triangle" d="M339,245H255.5V184.5Z" fill="#3EA2F5" />
-                                    <path class="second-triangle" d="M162,245H256V185Z" fill="#41C7CF" />
-                                    <path class="first-triangle" d="M256,185l-63-45.5L163,245Z" fill="#AED8FB" />
-                                  </svg>
-                                </div>
-                              </div>
-                            </div>
                           </div>
-                        </div>
-
-                        <div class="col-xl-6 col-lg-6 col-md-12 mb-4" data-aos="fade-up" data-aos-delay="200">
-                          <div class="home-case">
-                            <div class="home-case__wrap">
-                              <div class="home-case__layer">
-                                <div class="home-case__title fw-700">
-                                  <h1 class="home-case__title fw-700">GDeliver</h1>
-                                  <span>Delivery App</span>
-                                </div>
-                                <p class="fw-500">Gicoh Delivery App is an app that allows taking,
-                                  tracking, and reviewing orders at your registered
-                                outlets from customers nearby without any hassle.</p>
-                                <a href="gdeliver.html"><span class="link-more fw-700">Learn More</span></a>
-                              </div>
-                              <div class="home-case__video">
-                                <img
-                                width="642"
-                                height="420"
-                                src="//:0"
-                                class="attachment-full size-full intetics-lazy-image lazyload"
-                                alt="home-case_1"
-                                loading="lazy"
-                                data-lazy-thumbnail=""
-                                srcset="assets/img/gfood.jpg"
-                                sizes="(max-width: 642px) 100vw, 642px"
-                                data-srcset="assets/img/gfood.jpg"
-                                data-sizes="(max-width: 642px) 100vw, 642px"
-                                data-hw-ratio="65.4205607477%"
-                                data-lazy="assets/img/gfood.jpg"
-                                />
-                                <video preload="none" muted loop playsinline src="assets/img/gfood.mp4"></video>
-                                <div class="home-case__video-layer">
-                                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 340.54 246.16">
-                                    <path class="svg-hover" d="M195,141,0,0V245H163Z" />
-                                    <path class="third-triangle" d="M339,245H255.5V184.5Z" fill="#3EA2F5" />
-                                    <path class="second-triangle" d="M162,245H256V185Z" fill="#41C7CF" />
-                                    <path class="first-triangle" d="M256,185l-63-45.5L163,245Z" fill="#AED8FB" />
-                                  </svg>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
+                        </a>
                       </div>
+
+                      <div class="col-xl-6 col-lg-6 col-md-12 mb-4" data-aos="fade-up" data-aos-delay="150">
+                        <a href="grms.html" class="home-case">
+                          <div class="home-case__wrap">
+                            <div class="home-case__layer">
+                              <div class="home-case__title fw-700">
+                                <h1 class="home-case__title fw-700">GRMS</h1>
+                                <span> Retail Management System</span>
+                              </div>
+                              <p class="fw-500">GRMS is an ERP integrated solution for Retail Chain
+                                Stores. Especially for those looking to manage their
+                                current physical stores or franchise outlets and aiming
+                              to expand their businesses further.</p>
+                              <span class="link-more fw-700">Learn More</span>
+                            </div>
+                            <div class="home-case__video">
+                              <img
+                              width="642"
+                              height="420"
+                              src="//:0"
+                              class="attachment-full size-full intetics-lazy-image lazyload"
+                              alt="home-case_1"
+                              loading="lazy"
+                              data-lazy-thumbnail=""
+                              srcset="assets/img/rms.jpg"
+                              sizes="(max-width: 642px) 100vw, 642px"
+                              data-srcset="assets/img/rms.jpg"
+                              data-sizes="(max-width: 642px) 100vw, 642px"
+                              data-hw-ratio="65.4205607477%"
+                              data-lazy="assets/img/rms.jpg"
+                              />
+                              <video preload="none" muted loop playsinline src="assets/img/rms.mp4"></video>
+                              <div class="home-case__video-layer">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 340.54 246.16">
+                                  <path class="svg-hover" d="M195,141,0,0V245H163Z" />
+                                  <path class="third-triangle" d="M339,245H255.5V184.5Z" fill="#3EA2F5" />
+                                  <path class="second-triangle" d="M162,245H256V185Z" fill="#41C7CF" />
+                                  <path class="first-triangle" d="M256,185l-63-45.5L163,245Z" fill="#AED8FB" />
+                                </svg>
+                              </div>
+                            </div>
+
+                          </div>
+                        </a>
+                      </div>
+
+                      <div class="col-xl-6 col-lg-6 col-md-12 mb-4" data-aos="fade-up" data-aos-delay="200">
+                        <a href="gdeliver.html" class="home-case">
+                         <div class="home-case__wrap">
+                          <div class="home-case__layer">
+                            <div class="home-case__title fw-700">
+                              <h1 class="home-case__title fw-700">GDeliver</h1>
+                              <span>Delivery App</span>
+                            </div>
+                            <p class="fw-500">Gicoh Delivery App is an app that allows taking,
+                              tracking, and reviewing orders at your registered
+                            outlets from customers nearby without any hassle.</p>
+                            <span class="link-more fw-700">Learn More</span>
+                          </div>
+                          <div class="home-case__video">
+                            <img
+                            width="642"
+                            height="420"
+                            src="//:0"
+                            class="attachment-full size-full intetics-lazy-image lazyload"
+                            alt="home-case_1"
+                            loading="lazy"
+                            data-lazy-thumbnail=""
+                            srcset="assets/img/gfood.jpg"
+                            sizes="(max-width: 642px) 100vw, 642px"
+                            data-srcset="assets/img/gfood.jpg"
+                            data-sizes="(max-width: 642px) 100vw, 642px"
+                            data-hw-ratio="65.4205607477%"
+                            data-lazy="assets/img/gfood.jpg"
+                            />
+                            <video preload="none" muted loop playsinline src="assets/img/gfood.mp4"></video>
+                            <div class="home-case__video-layer">
+                              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 340.54 246.16">
+                                <path class="svg-hover" d="M195,141,0,0V245H163Z" />
+                                <path class="third-triangle" d="M339,245H255.5V184.5Z" fill="#3EA2F5" />
+                                <path class="second-triangle" d="M162,245H256V185Z" fill="#41C7CF" />
+                                <path class="first-triangle" d="M256,185l-63-45.5L163,245Z" fill="#AED8FB" />
+                              </svg>
+                            </div>
+                          </div>
+
+                        </div>
+                      </a>
                     </div>
-                  </div>
-                </div>
-              </section>
-
-              <!--feature promo section start-->
-              <section class="feature-section industry-section" style="background-image: linear-gradient(0deg, #0b163feb, #0b163fcc), url(assets/img/apply-now-1.jpg);">
-                <div class="container">
-                  <div class="row justify-content-center">
-                    <div class="col-lg-6 col-md-12">
-                      <div class="section-heading text-center mb-3" data-aos="fade-up" data-aos-delay="100">
-                        <h2>Industries</h2>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row align-items-center">
-                    <div class="col-md-12" data-aos="fade-up" data-aos-delay="150">
-                      <div id="industries" class="owl-carousel">
-                        <div class="item">
-                          <div class="position-relative">
-                            <div class="cta-card text-center bg-white mt-4 mt-lg-0 mt-md-0 z-2">
-                              <div class="feature-icon d-inline-block">
-                                <img src="assets/img/home/industry/eCommerce.png" alt="eCommerce" />
-                              </div>
-                              <h3 class="h5">
-                               FMCG
-                             </h3>
-                           </div>
-                         </div>
-                       </div>
-                       <div class="item">
-                        <div class="position-relative">
-                          <div class="cta-card text-center bg-white mt-4 mt-lg-0">
-                            <div class="feature-icon d-inline-block">
-                              <img src="assets/img/home/industry/factory.png" alt="factory" />
-                            </div>
-                            <h3 class="h5">Food Production</h3>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="item">
-                        <div class="position-relative">
-                          <div class="cta-card text-center bg-white mt-4 mt-lg-0">
-                            <div class="feature-icon d-inline-block">
-                              <img src="assets/img/home/industry/manufacturing.png" alt="manufacturing" />
-                            </div>
-                            <h3 class="h5">Manufacturing</h3>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="item">
-                        <div class="position-relative">
-                          <div class="cta-card text-center bg-white mt-4 mt-lg-0">
-                            <div class="feature-icon d-inline-block">
-                              <img src="assets/img/home/industry/retail.png" alt="retail" />
-                            </div>
-                            <h3 class="h5">Retail</h3>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="item">
-                        <div class="position-relative">
-                          <div class="cta-card text-center bg-white mt-4 mt-lg-0">
-                            <div class="feature-icon d-inline-block">
-                              <img src="assets/img/home/industry/agriculture.png" alt="agriculture" />
-                            </div>
-                            <h3 class="h5">Agriculture</h3>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="item">
-                        <div class="position-relative">
-                          <div class="cta-card text-center bg-white mt-4 mt-lg-0">
-                            <div class="feature-icon d-inline-block">
-                              <img src="assets/img/home/industry/food.png" alt="food" />
-                            </div>
-                            <h3 class="h5">Beverages</h3>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="item">
-                        <div class="position-relative">
-                          <div class="cta-card text-center bg-white mt-4 mt-lg-0">
-                            <div class="feature-icon d-inline-block">
-                              <img src="assets/img/home/industry/checmicals.png" alt="checmicals" />
-                            </div>
-                            <h3 class="h5">Chemicals</h3>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="item">
-                        <div class="position-relative">
-                          <div class="cta-card text-center bg-white mt-4 mt-lg-0 mt-md-0 z-2">
-                            <div class="feature-icon d-inline-block">
-                              <img src="assets/img/home/industry/goods.png" alt="goods" />
-                            </div>
-                            <h3 class="h5">
-                              Consumer Goods
-                            </h3>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="item">
-                        <div class="position-relative">
-                          <div class="cta-card text-center bg-white mt-4 mt-lg-0">
-                            <div class="feature-icon d-inline-block">
-                              <img src="assets/img/home/industry/health.png" alt="health" />
-                            </div>
-                            <h3 class="h5">Healthcare</h3>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="item">
-                        <div class="position-relative">
-                          <div class="cta-card text-center bg-white mt-4 mt-lg-0">
-                            <div class="feature-icon d-inline-block">
-                              <img src="assets/img/home/industry/media.png" alt="media" />
-                            </div>
-                            <h3 class="h5">Media</h3>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="item">
-                        <div class="position-relative">
-                          <div class="cta-card text-center bg-white mt-4 mt-lg-0 mt-md-0">
-                            <div class="feature-icon d-inline-block">
-                              <img src="assets/img/home/industry/personalcare.png" alt="personalcare" />
-                            </div>
-                            <h3 class="h5">Personal Care</h3>
-                          </div>
-                        </div>
-                      </div>
-
-
-                      <div class="item">
-                        <div class="position-relative">
-                          <div class="cta-card text-center bg-white mt-4 mt-lg-0">
-                            <div class="feature-icon d-inline-block">
-                              <img src="assets/img/home/industry/pharmaceutical.png" alt="pharmaceutical" />
-                            </div>
-                            <h3 class="h5">Pharmaceutical</h3>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="item">
-                        <div class="position-relative">
-                          <div class="cta-card text-center bg-white mt-4 mt-lg-0">
-                            <div class="feature-icon d-inline-block">
-                              <img src="assets/img/home/industry/real-estate.png" alt="real-estate" />
-                            </div>
-                            <h3 class="h5">Real-estate</h3>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="item">
-                        <div class="position-relative">
-                          <div class="cta-card text-center bg-white mt-4 mt-lg-0">
-                            <div class="feature-icon d-inline-block">
-                              <img src="assets/img/home/industry/textile.png" alt="textile" />
-                            </div>
-                            <h3 class="h5">Textile</h3>
-                          </div>
-                        </div>
-                      </div>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
-
-            <section class="feature-section-two pt-60 ptb-80">
-              <div class="container">
-                <div class="row justify-content-lg-between align-items-center">
-                  <div class="col-md-12">
-                   <div class="section-heading mb-4 pb-2 pb-md-0 mb-md-5" data-aos="fade-up" data-aos-delay="100">
-                    <h2>What makes us different</h2>
-                  </div>
-                </div>
-                <div class="col-lg-6 col-md-12">
-                  <div class="feature-content-wrap">
-
-                    <ul class="list-unstyled mb-0">
-                      <li class="d-flex align-items-start mb-4" data-aos="fade-up" data-aos-delay="150">
-                        <div class="icon-box bg-primary rounded me-4">
-                          <img src="assets/img/home/user.png">
-                        </div>
-                        <div class="icon-content">
-                          <h3 class="h5">People Before Product</h3>
-                          <p>The most important product we can ever develop is our people. People make products, people use products, we are a people company.</p>
-                        </div>
-                      </li>
-                      <li class="d-flex align-items-start mb-4" data-aos="fade-up" data-aos-delay="200">
-                        <div class="icon-box bg-danger rounded me-4">
-                          <img src="assets/img/home/community.png">
-                        </div>
-                        <div class="icon-content">
-                          <h3 class="h5">Community Before Corporation</h3>
-                          <p>We win and lose together. We all make it together or we don't make it at all. Clear eyes, full hearts...</p>
-                        </div>
-                      </li>
-                      <li class="d-flex align-items-start mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="250">
-                        <div class="icon-box bg-dark rounded me-4">
-                          <img src="assets/img/home/relationships.png">
-                        </div>
-                        <div class="icon-content">
-                          <h3 class="h5">Relationships Before Process</h3>
-                          <p>Relationships are the root of all processes. Our relationships will determine if our processes live or die.</p>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="col-lg-6 col-md-7 ps-md-5">
-                  <div class="feature-img-wrap" data-aos="fade-left" data-aos-delay="200">
-                    <img src="assets/img/process.jpg" alt="feature image" class="img-fluid rounded-custom" />
                   </div>
                 </div>
               </div>
             </div>
           </section>
 
-          <!-- Testimonial -->
-          <section class="customer-review-tab ptb-80 bg-light position-relative z-2">
+          <!--feature promo section start-->
+          <section class="feature-section industry-section" style="background-image: linear-gradient(0deg, #0b163feb, #0b163fcc), url(assets/img/apply-now-1.jpg);">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-lg-6 col-md-12">
+                  <div class="section-heading text-center mb-3" data-aos="fade-up" data-aos-delay="100">
+                    <h2>Industries</h2>
+                  </div>
+                </div>
+              </div>
+              <div class="row align-items-center">
+                <div class="col-md-12" data-aos="fade-up" data-aos-delay="150">
+                  <div id="industries" class="owl-carousel">
+                    <div class="item">
+                      <div class="position-relative">
+                        <div class="cta-card text-center bg-white mt-4 mt-lg-0 mt-md-0 z-2">
+                          <div class="feature-icon d-inline-block">
+                            <img src="assets/img/home/industry/eCommerce.png" alt="eCommerce" />
+                          </div>
+                          <h3 class="h5">
+                           FMCG
+                         </h3>
+                       </div>
+                     </div>
+                   </div>
+                   <div class="item">
+                    <div class="position-relative">
+                      <div class="cta-card text-center bg-white mt-4 mt-lg-0">
+                        <div class="feature-icon d-inline-block">
+                          <img src="assets/img/home/industry/factory.png" alt="factory" />
+                        </div>
+                        <h3 class="h5">Food Production</h3>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="position-relative">
+                      <div class="cta-card text-center bg-white mt-4 mt-lg-0">
+                        <div class="feature-icon d-inline-block">
+                          <img src="assets/img/home/industry/manufacturing.png" alt="manufacturing" />
+                        </div>
+                        <h3 class="h5">Manufacturing</h3>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="position-relative">
+                      <div class="cta-card text-center bg-white mt-4 mt-lg-0">
+                        <div class="feature-icon d-inline-block">
+                          <img src="assets/img/home/industry/retail.png" alt="retail" />
+                        </div>
+                        <h3 class="h5">Retail</h3>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="position-relative">
+                      <div class="cta-card text-center bg-white mt-4 mt-lg-0">
+                        <div class="feature-icon d-inline-block">
+                          <img src="assets/img/home/industry/agriculture.png" alt="agriculture" />
+                        </div>
+                        <h3 class="h5">Agriculture</h3>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="position-relative">
+                      <div class="cta-card text-center bg-white mt-4 mt-lg-0">
+                        <div class="feature-icon d-inline-block">
+                          <img src="assets/img/home/industry/food.png" alt="food" />
+                        </div>
+                        <h3 class="h5">Beverages</h3>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="position-relative">
+                      <div class="cta-card text-center bg-white mt-4 mt-lg-0">
+                        <div class="feature-icon d-inline-block">
+                          <img src="assets/img/home/industry/checmicals.png" alt="checmicals" />
+                        </div>
+                        <h3 class="h5">Chemicals</h3>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="position-relative">
+                      <div class="cta-card text-center bg-white mt-4 mt-lg-0 mt-md-0 z-2">
+                        <div class="feature-icon d-inline-block">
+                          <img src="assets/img/home/industry/goods.png" alt="goods" />
+                        </div>
+                        <h3 class="h5">
+                          Consumer Goods
+                        </h3>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="position-relative">
+                      <div class="cta-card text-center bg-white mt-4 mt-lg-0">
+                        <div class="feature-icon d-inline-block">
+                          <img src="assets/img/home/industry/health.png" alt="health" />
+                        </div>
+                        <h3 class="h5">Healthcare</h3>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="item">
+                    <div class="position-relative">
+                      <div class="cta-card text-center bg-white mt-4 mt-lg-0">
+                        <div class="feature-icon d-inline-block">
+                          <img src="assets/img/home/industry/media.png" alt="media" />
+                        </div>
+                        <h3 class="h5">Media</h3>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="item">
+                    <div class="position-relative">
+                      <div class="cta-card text-center bg-white mt-4 mt-lg-0 mt-md-0">
+                        <div class="feature-icon d-inline-block">
+                          <img src="assets/img/home/industry/personalcare.png" alt="personalcare" />
+                        </div>
+                        <h3 class="h5">Personal Care</h3>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="item">
+                    <div class="position-relative">
+                      <div class="cta-card text-center bg-white mt-4 mt-lg-0">
+                        <div class="feature-icon d-inline-block">
+                          <img src="assets/img/home/industry/pharmaceutical.png" alt="pharmaceutical" />
+                        </div>
+                        <h3 class="h5">Pharmaceutical</h3>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="position-relative">
+                      <div class="cta-card text-center bg-white mt-4 mt-lg-0">
+                        <div class="feature-icon d-inline-block">
+                          <img src="assets/img/home/industry/real-estate.png" alt="real-estate" />
+                        </div>
+                        <h3 class="h5">Real-estate</h3>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="item">
+                    <div class="position-relative">
+                      <div class="cta-card text-center bg-white mt-4 mt-lg-0">
+                        <div class="feature-icon d-inline-block">
+                          <img src="assets/img/home/industry/textile.png" alt="textile" />
+                        </div>
+                        <h3 class="h5">Textile</h3>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="feature-section-two bg-light pt-60 ptb-80">
+          <div class="container">
+            <div class="row justify-content-lg-between align-items-center">
+              <div class="col-md-12">
+               <div class="section-heading mb-4 pb-2 pb-md-0 mb-md-5" data-aos="fade-up" data-aos-delay="100">
+                <h2>What makes us different</h2>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-12">
+              <div class="feature-content-wrap">
+
+                <ul class="list-unstyled mb-0">
+                  <li class="d-flex align-items-start mb-4" data-aos="fade-up" data-aos-delay="150">
+                    <div class="icon-box bg-primary rounded me-4">
+                      <img src="assets/img/home/user.png">
+                    </div>
+                    <div class="icon-content">
+                      <h3 class="h5">People Before Product</h3>
+                      <p>The most important product we can ever develop is our people. People make products, people use products, we are a people company.</p>
+                    </div>
+                  </li>
+                  <li class="d-flex align-items-start mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="icon-box bg-danger rounded me-4">
+                      <img src="assets/img/home/community.png">
+                    </div>
+                    <div class="icon-content">
+                      <h3 class="h5">Community Before Corporation</h3>
+                      <p>We win and lose together. We all make it together or we don't make it at all. Clear eyes, full hearts...</p>
+                    </div>
+                  </li>
+                  <li class="d-flex align-items-start mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="250">
+                    <div class="icon-box bg-dark rounded me-4">
+                      <img src="assets/img/home/relationships.png">
+                    </div>
+                    <div class="icon-content">
+                      <h3 class="h5">Relationships Before Process</h3>
+                      <p>Relationships are the root of all processes. Our relationships will determine if our processes live or die.</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-7 ps-md-5">
+              <div class="feature-img-wrap" data-aos="fade-left" data-aos-delay="200">
+                <img src="assets/img/process.jpg" alt="feature image" class="img-fluid rounded-custom" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonial -->
+          <!-- <section class="customer-review-tab ptb-80 bg-light position-relative z-2">
             <div class="container">
               <div class="row justify-content-center align-content-center">
                 <div class="col-md-10 col-lg-6">
                   <div class="section-heading text-center" data-aos="fade-up">
-                    <h4 class="h5 text-primary">Testimonial</h4>
                     <h2>What They Say About Us</h2>
                     <p>Uniquely promote adaptive quality vectors rather than stand-alone e-markets. pontificate alternative architectures whereas iterate.</p>
                   </div>
@@ -892,7 +893,7 @@
               </div>
             </div>
           </div>
-        </section>
+        </section> -->
         <!-- Contact Us -->
         <section class="contact-us ptb-80 position-relative overflow-hidden">
           <div class="container">
@@ -924,7 +925,7 @@
                         Our support will help you from
                         <strong>9am to 6pm PST.</strong>
                       </p>
-                      <a href="#" class="read-more-link text-decoration-none"><i class="far fa-comment-alt-dots me-2"></i> Live Chat Now</a>
+                      <a href="#" class="read-more-link text-decoration-none"><i class="far fa-comment-alt-dots me-2"></i>  Chat with us</a>
                     </div>
                   </div>
                 </div>
@@ -975,7 +976,7 @@
                         </div>
                       </div>
                       <div class="col-12">
-                        <button type="submit" class="btn btn-primary mt-4 d-block w-100">Get Started</button>
+                        <button type="submit" class="btn btn-primary mt-4 d-block w-100">Submit</button>
                       </div>
                     </div>
                   </form>
@@ -1137,7 +1138,7 @@
             let x = 0;
             let y = 0;
             //how fast typing is
-            let wait = 200;
+            let wait = 300;
             //how long you want to text stay before overwriting
             let additionalwait = 5;
             let txt = yourtext[0][0].split("");
@@ -1180,6 +1181,8 @@
               responsive: {
                 0: {
                   items: 1,
+                  autoplayTimeout: 4000,
+                  autoplaySpeed: 4000,
                 },
                 576: {
                   items: 2,
@@ -1208,6 +1211,18 @@
               $('video', this).get(0).pause();
             }
 
+            // $(document).ready(function(){
+            //   $(".home-case__wrap").mouseover(function(){
+            //     $('.first-triangle').fadeOut(500);
+            //     $('.second-triangle').fadeOut(1000);
+            //     $('.third-triangle').fadeOut(1500);
+            //   });
+            //     $(".home-case__wrap").mouseout(function(){
+            //     $('.first-triangle').show();
+            //     $('.second-triangle').show();
+            //     $('.third-triangle').show();
+            //   });
+            // });
 
           </script>
 
@@ -1226,6 +1241,12 @@
                 cf7_custom_error_messages:
                 '{"default_message":"Invalid field value","required_first-name":"Please enter your first name","required_last-name":"Please enter your last name","required_your-name":"Please enter your full name","required_full-name":"Please enter your full name","required_your-company":"Please enter your company","required_your-position":"Please enter your position","required_your-address":"Please enter your address","required_your-city":"Please enter your city","required_your-state":"Please enter your state","required_your-email":"Please enter your email","required_business-email":"Please enter your business email","required_your-phone":"Please enter your phone number","required_your-international-phone":"Please enter your phone number","required_your-message":"Please enter your request","invalid_your-email":"Please enter a valid email","invalid_business-email":"Please enter a valid business address","invalid_your-phone":"Please enter a valid phone number","too_short":"Input value is too short. Min length is %1$s symbols","too_long":"Input value is too long. Max length is %1$s symbols","has_html":"Please remove all HTML tags from this field","upload_file_too_large":"File exceeds the maximum upload size"}',
               };
+
+
+
+
+
+
             </script>
           </body>
           </html>

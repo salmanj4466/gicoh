@@ -37,6 +37,21 @@ html {
   text-align: left;
 }
 
+/*.home-case:hover .first-triangle {
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.home-case:hover .second-triangle {
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.home-case:hover .third-triangle{
+  opacity: 0;
+  transition: all 0.3s;
+}*/
+
 
 canvas {
 	/*opacity: .4;*/
@@ -56,6 +71,8 @@ canvas {
 	color: #ff8c00;
 	border-right: 2px solid #fff;
 	animation: cursoranim 1s linear infinite;
+  padding-right: 8px;
+  margin-right: 10px;
 }
 
 @keyframes cursoranim {
