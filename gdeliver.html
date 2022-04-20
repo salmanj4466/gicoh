@@ -584,71 +584,7 @@
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
 <script>
-            //you can change the text, but you need to keep same format [yourtext, color];
-            let yourtext = [
-            ["Secondary Sales", "#ff8c00"],
-            ["Retail Sale", "#46b702"],
-            ["Enterprise Resource", "#175cff"],
-            ["Customized Management", "#ff8c00"],
-            ];
-
-            let x = 0;
-            let y = 0;
-            //how fast typing is
-            let wait = 200;
-            //how long you want to text stay before overwriting
-            let additionalwait = 5;
-            let txt = yourtext[0][0].split("");
-            let out = "";
-            let retyping = setInterval(function () {
-                document.getElementById("changingText").innerHTML = out;
-                if (x > txt.length - 1) {
-                } else {
-                    out += txt[x];
-                }
-                x++;
-                if (x == txt.length + 2 + additionalwait) {
-                    if (y == yourtext.length - 1) {
-                        y = 0;
-                        txt = yourtext[y][0].split("");
-                        out = "";
-                        document.getElementById("changingText").innerHTML = out;
-                        document.getElementById("changingText").style.color = yourtext[y][1];
-                        x = 0;
-                    } else {
-                        y += 1;
-                        txt = yourtext[y][0].split("");
-                        out = "";
-                        document.getElementById("changingText").innerHTML = out;
-                        document.getElementById("changingText").style.color = yourtext[y][1];
-                        x = 0;
-                    }
-                }
-            }, wait);
-
-            $("#industries").owlCarousel({
-                loop: true,
-                margin: 5,
-                dots: false,
-                autoplay: true,
-                smartSpeed: 300,
-                autoplayTimeout: 5000,
-                autoplaySpeed: 3000,
-                navText: ['<i class="fas fa-angle-left"></i>', '<i class="fas fa-angle-right"></i>'],
-                responsive: {
-                    0: {
-                        items: 1,
-                    },
-                    600: {
-                        items: 2,
-                    },
-                    1000: {
-                        items: 5,
-                        nav: true,
-                    },
-                },
-            });
-
+         
             const swiper = new Swiper('.swiper-container', {
                 effect: 'coverflow',
                 centeredSlides: true,
