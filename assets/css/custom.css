@@ -1,5 +1,12 @@
 
 
+.home-page {
+  font-size: unset !important;
+  min-height: unset !important;
+  height: unset !important;
+  overflow-x: hidden;
+}
+
 .hero-section {
 	padding: 300px 0 242px;
 }
@@ -564,7 +571,7 @@ footer strong {
   }
 
   .hero-section {
-    padding: 150px 20px;
+    padding: 120px 0;
     background-image: linear-gradient(to bottom, #000000b5, rgb(5 5 5 / 62%)), url(../../assets/img/banner.jpg);
     background-size: cover;
   }
@@ -575,50 +582,51 @@ footer strong {
 
   .hero-section h4 {
     font-weight: 500;
-    font-size: 22px;
+    font-size: 20px;
     line-height: 35px;
-}
+    height: 140px;
+  }
 
-.feature-content-wrap .icon-content p {
-      font-size: 0.8rem;
-}
+  .feature-content-wrap .icon-content p {
+    font-size: 0.8rem;
+  }
 
-.footer-social-list li a {
+  .footer-social-list li a {
     font-size: 15px;
   }
 
   .footer-top.ptb-80 {
     padding: 50px 0;
-}
+  }
 
-.testimonial-video-wrapper .video-icon i {
-  font-size: 18px;
-}
+  .testimonial-video-wrapper .video-icon i {
+    font-size: 18px;
+  }
 
-.testimonial-video-wrapper span {
-  font-size: 14px;
-}
+  .testimonial-video-wrapper span {
+    font-size: 14px;
+  }
 
-.contact-info p,
-.customer-review-tab p,
-.contact-us p {
-  font-size: 14px;
-}
+  .contact-info p,
+  .customer-review-tab p,
+  .contact-us p {
+    font-size: 14px;
+  }
 
-.home-case__title {
-      height: auto;
-          font-size: 15px;
-          margin-bottom: 10px;
-}
+  .home-case__title {
+    height: auto;
+    font-size: 14px;
+    margin-bottom: 5px !important;
+  }
 
-.home-case__title span {
+  .home-case__title span {
     color: #333;
-    font-size: 13px;
+    font-size: 12px;
     width: 14em;
 
-    }
+  }
 
-    .home-case__title+p {
+  .home-case__title+p {
     font-size: 11px;
     width: 20em;
   }
@@ -626,6 +634,33 @@ footer strong {
   .home-case .link-more {
     font-size: 10px;
 
+  }
+
+  .register-form h5 {
+        font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 15px;
+  }
+
+  .home-case__layer {
+    padding: 12px 20px 12px 12px;
+  }
+
+  #industries .item .cta-card {
+    margin-top: 0 !important;
+        padding: 20px 20px 25px;
+  }
+
+.feature-section-two .feature-content-wrap .h5 {
+  font-size: 14px;
+}
+
+.feature-section-two h2  {
+  font-size: 20px;
+}
+
+.register-wrap.p-5 {
+  padding: 30px !important;
 }
 
 }
