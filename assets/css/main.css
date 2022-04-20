@@ -69,6 +69,7 @@ body {
   color: #212529;
   background-color: #fff;
   -webkit-text-size-adjust: 100%;
+  overflow-x: hidden;
   -webkit-tap-highlight-color: transparent;
 }
 
@@ -50651,6 +50652,7 @@ select:invalid {
   left: 0;
   width: 100%;
   height: 100vh;
+  overflow-x: hidden;
   background-color: var(--bs-light);
   display: -webkit-box;
   display: -ms-flexbox;

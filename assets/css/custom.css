@@ -1,9 +1,5 @@
 
-
-.home-page {
-  font-size: unset !important;
-  min-height: unset !important;
-  height: unset !important;
+html {
   overflow-x: hidden;
 }
 
@@ -599,20 +595,6 @@ footer strong {
     padding: 50px 0;
   }
 
-  .testimonial-video-wrapper .video-icon i {
-    font-size: 18px;
-  }
-
-  .testimonial-video-wrapper span {
-    font-size: 14px;
-  }
-
-  .contact-info p,
-  .customer-review-tab p,
-  .contact-us p {
-    font-size: 14px;
-  }
-
   .home-case__title {
     height: auto;
     font-size: 14px;
@@ -661,6 +643,18 @@ footer strong {
 
 .register-wrap.p-5 {
   padding: 30px !important;
+}
+
+.customer-review-tab h2 {
+     font-size: 20px;
+}
+
+.customer-review-tab h3 {
+     font-size: 16px;
+}
+
+.app-two-feature.ptb-80 {
+  padding: 50px 0;
 }
 
 }
