@@ -15,371 +15,325 @@
  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
  <!-- Animation CSS -->
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+ <!--build:css-->
+ <link rel="stylesheet" href="assets/css/main.css" />
+ <!--custom css start-->
+ <link rel="stylesheet" href="assets/css/custom.css" />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
  <title>Gicoh</title>
 
  <style>
 
-  html {
-    height: 100%;
-  }
-
-  body {
+ /* body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    background: #f5f5f5;
     height: 100vh;
     display: flex;
     align-items: center;
     width: 100%;
-  }
+    }*/
 
-  ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+    .gcosystem ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
 
-  }
+    }
 
-  ul li {
-    display: flex;
-    font-size: 13px;
+    .gcosystem ul li {
+      display: flex;
+      font-size: 13px;
+      font-family: 'Raleway', sans-serif;
+      color: #fff;
+      padding: 0 0;
+    }
+
+    .gcosystem  ul i {
+      font-size: 12px !important;
+      margin-right: 5px;
+      color: #fff;
+      position: relative;
+      top: 5px;
+    }
+
+    .bg-video-wrap {
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
+      position: fixed;
+    }
+
+    .bg-video-wrap video {
+      min-width: 100%;
+      min-height: 100vh;
+      width: 100%;
+      z-index: 1;
+    }
+
+    .overlay {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-image: linear-gradient(#00000078, #00000063);
+      background-size: cover;
+      z-index: 2;
+    }
+
+    .gerp {
+      border: 3px solid #fff;
+      max-width: 300px;
+      height: 300px;
+      border-radius: 0;
+      display: block;
+      padding: 20px 20px;
+      margin-bottom: 30px;
+      background: #034e87c2;
+      position: relative;
+
+
+    } 
+
+    .gerp:hover {
+      border: 3px solid darkorange;
+      background: #034e87ed;
+    }
+
+    .gerp ul {
+     color: #fff;
+   }
+
+   .gcosystem h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: 600;
     font-family: 'Raleway', sans-serif;
     color: #fff;
-    padding: 2px 0;
+
   }
 
-  ul i {
-    font-size: 12px !important;
-    margin-right: 5px;
+  .gcosystem h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-family: 'Raleway', sans-serif;
     color: #fff;
-    position: relative;
-    top: 5px;
   }
 
-  .container, .row {
-    height: 100%;
-  }
-
-  .bg-video-wrap {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
-    position: fixed;
-  }
-
-  .bg-video-wrap video {
-    min-width: 100%;
-    min-height: 100vh;
-    width: 100%;
-    z-index: 1;
-  }
-
-  .overlay {
-    width: 100%;
-    height: 100%;
+  .gerp-line:after {
+       content: "";
+    width: 2px;
     position: absolute;
-    top: 0;
-    left: 0;
-    background-image: linear-gradient(#00000069, #00000059);
-    background-size: cover;
-    z-index: 2;
+    top: -48px;
+    left: 50%;
+    border-right: 3px solid #ffcf43;
+    height: 50px;
+    background: #ffcf43;
   }
 
-  .gerp {
+  /* GRMS */
+
+  .grms {
     border: 3px solid #fff;
     max-width: 300px;
     height: 300px;
     border-radius: 0;
+    background: #f78620c9;
+    padding: 20px 20px;
+    margin-bottom: 30px;
+    display: block;
+    position: relative;
+  } 
+
+  .grms:hover {
+    border: 3px solid #07c779;
+    background: #f78620de;
+  }
+
+  .grms-line:after {
+       content: "";
+    width: 2px;
+    position: absolute;
+    top: -48px;
+    left: 50%;
+    border-right: 3px solid #ffcf43;
+    height: 50px;
+    background: #ffcf43;
+  }
+
+  /* GSSM */
+
+  .gssm {
+    border: 3px solid #fff;
+    max-width: 300px;
+    height: 300px;
+    border-radius: 0;
+    background: #07c779c9;
     display: block;
     padding: 20px 20px;
     margin-bottom: 30px;
-    z-index: 9999;
-    background: #034e87c2;
     position: relative;
 
-    
   } 
 
-  .gerp:hover {
+  .gssm:hover {
     border: 3px solid darkorange;
-    background: #034e87ed;
+    background: #07c779db;
   }
 
-/*
-.gerp-outer:before {
-    content: "";
-    border: 1px solid #cec7c7;
-    border-radius: 50%;
-    width: 460px;
-    height: 460px;
+  .gssm-line:after {
+       content: "";
+    width: 2px;
     position: absolute;
-    top: -35px;
-    left: -35px;
-    background: #fff;
-}
-*/
-.gerp ul {
- color: #fff;
-}
+    top: -48px;
+    left: 50%;
+    border-right: 3px solid #ffcf43;
+    height: 50px;
+    background: #ffcf43;
+  }
 
-h3 {
-  font-size: 20px;
-  text-align: center;
-  margin-bottom: 20px;
-  font-weight: 600;
-  font-family: 'Raleway', sans-serif;
-  color: #fff;
+  /* GFood */
 
-}
+  .gfood {
+    border: 3px solid #fff;
+    max-width: 300px;
+    height: 300px;
+    border-radius: 0;
+    background: #e1ba00bd;
+    display: block;
+    padding: 20px 20px;
+    margin-bottom: 30px;
+    position: relative;
 
-h4 {
-  font-size: 18px;
-  text-align: center;
-  margin-bottom: 15px;
-  font-weight: 600;
-  font-family: 'Raleway', sans-serif;
-  color: #fff;
-}
+  } 
 
-.gerp-line:before {
- content: "";
- width: 271px;
- position: absolute;
- top: 164px;
- right: -254px;
- background: #ffcf43;
- border-top: 3px solid #ffcf43;
-}
 
-.gerp-line:after {
-  content: "";
-  width: 2px;
-  position: absolute;
-  top: 164px;
-  right: -254px;
-  border-right: 3px solid #ffcf43;
-  height: 90px;
-  background: #ffcf43;
-}
+  .gfood:hover {
+    border: 3px solid #034e87;
+    background: #e1ba00d6;
+  }
 
-/* GRMS */
+  .gfood-line:after {
+       content: "";
+    width: 2px;
+    position: absolute;
+    top: -48px;
+    left: 50%;
+    border-right: 3px solid #ffcf43;
+    height: 50px;
+    background: #ffcf43;
+  }
 
-.grms {
-  border: 3px solid #fff;
-  max-width: 300px;
-  height: 300px;
-  border-radius: 0;
-  background: #f78620c9;
-  padding: 20px 20px;
-  margin-bottom: 30px;
-  display: block;
-  position: relative;
-} 
 
-.grms:hover {
-  border: 3px solid #07c779;
-  background: #f78620de;
-}
-
-.grms-line:before {
- content: "";
- width: 271px;
- position: absolute;
- top: 164px;
- left: -254px;
- background: #ffcf43;
- border-top: 3px solid #ffcf43;
-}
-
-.grms-line:after {
-  content: "";
-  width: 2px;
-  position: absolute;
-  top: 164px;
-  left: -254px;
-  border-right: 3px solid #ffcf43;
-  height: 90px;
-  background: #ffcf43;
-}
+  .title {
+   position: absolute;
+   top: -27px;
+   font-size: 18px;
+   right: 5%;
+   color: darkorange;
+   font-weight: 600;
+   background: #fff;
+   padding: 5px 10px;
+   border-radius: 3px;
+ }
 
 
 
-/* GSSM */
-
-.gssm {
-  border: 3px solid #fff;
-  max-width: 300px;
-  height: 300px;
-  border-radius: 0;
-  background: #07c779c9;
-  display: block;
-  padding: 20px 20px;
-  margin-bottom: 30px;
-  position: relative;
-
-} 
-
-.gssm:hover {
-  border: 3px solid darkorange;
-  background: #07c779db;
-}
-
-.gssm-line:before {
- content: "";
- width: 271px;
- position: absolute;
- bottom: 164px;
- right: -254px;
- background: #ffcf43;
- border-top: 3px solid #ffcf43;
-}
-
-.gssm-line:after {
-  content: "";
-  width: 2px;
-  position: absolute;
-  bottom: 164px;
-  right: -254px;
-  border-right: 3px solid #ffcf43;
-  height: 90px;
-  background: #ffcf43;
-}
-
-/* GFood */
-
-.gfood {
-  border: 3px solid #fff;
-  max-width: 300px;
-  height: 300px;
-  border-radius: 0;
-  background: #e1ba00bd;
-  display: block;
-  padding: 20px 20px;
-  margin-bottom: 30px;
-  position: relative;
-
-} 
-
-
-.gfood:hover {
-  border: 3px solid #034e87;
-  background: #e1ba00d6;
-}
-
-.gfood-line:before {
- content: "";
- width: 271px;
- position: absolute;
- bottom: 164px;
- left: -254px;
- background: #ffcf43;
- border-top: 3px solid #ffcf43;
-}
-
-.gfood-line:after {
-  content: "";
-  width: 2px;
-  position: absolute;
-  bottom: 164px;
-  left: -254px;
-  border-right: 3px solid #ffcf43;
-  height: 90px;
-  background: #ffcf43;
-}
-
-
-.title {
-  position: absolute;
-  top: 4px;
-  font-size: 18px;
-  right: -30%;
-  color: darkorange;
-  font-weight: 600;
-  background: #fff;
-  padding: 5px 10px;
-  border-radius: 3px;
-}
-
-.title.right {
-  right: unset;
-  left: -32%;
-}
-
-
-.gfood .title.right {
-  left: -39%;
-}
-
-
-.title.left:after {
+ .title:after {
   content: "";
   width: 0;
   height: 0;
-  border-top: 6px solid transparent;
-  border-right: 12px solid #fff;
-  border-bottom: 8px solid transparent;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 8px solid white;
   position: absolute;
-  left: -12px;
-  bottom: 9px;
+  left: 8px;
+  bottom: -8px;
 }
 
-.title.right:after {
-  content: "";
-  width: 0;
-  height: 0;
-  border-top: 6px solid transparent;
-  border-left: 12px solid #fff;
-  border-bottom: 6px solid transparent;
-  right: -12px;
-  position: absolute;
-  bottom: 9px;
-}
-
-
-a:hover {
+.gcosystem a:hover,
+.gcosystem a {
   text-decoration: none;
 }
 
 .gcoh-text {
   background: #f7f7f7db;
-  width: 260px;
-  padding: 20px 15px;
-  margin: 0 auto;
+  width: 740px;
+  padding: 20px 30px;
+  margin: 90px auto 30px;
   text-align: center;
 }
 
 .gcoh-text h1 {
   color: #000;
-  margin-top: 12px;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
-  font-size: 24px;
-}
-
-.gcoh-text p {
-  font-weight: 700;
-  font-size: 12px;
+  font-size: 20px;
+  margin-bottom: 0;
 }
 
 .gcoh-text h1 span {
   color: darkorange;
+  font-size: 26px;
 }
 
-/*
-@media (min-width: 992px) {
-  .container, .container-lg, .container-md, .container-sm {
-    max-width: 1150px;
-    padding: 30px 0;
+
+.gcoh-text small {
+  font-weight: 700;
+  font-size: 13px;
+  color: #000;
+}
+
+.gcoh-text p {
+  font-weight: 600;
+  font-size: 12px;
+  margin-top: 6px;
+  color: #4a4848;
+  text-align: justify;
+  margin-bottom: 0;
+}
 
 
+.gcosystem .line:after {
+  content: "";
+  width: 75.2%;
+  position: absolute;
+  bottom: -10px;
+  left: 12.5%;
+  border-bottom: 3px solid #ffcf43;
+  background: #ffcf43;}
+
+  .gcosystem .line:before {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    height: 40px;
+    border-right: 3px solid #ffcf43;
+    background: #ffcf43;
   }
-  */
+
+  .gcosystem  .mb-40 {
+    margin-bottom: 55px;
+  }
+
+    .gcosystem  h2 {
+      color: #fff;
+      font-size: 24px;
+      margin-bottom: 5px;
+    }
+
+  footer {
+    position: relative;
+    background: #fff;
+  }
+
   @media (min-width: 1200px) {
     .container, .container-lg, .container-md, .container-sm, .container-xl {
       max-width: 1250px;
-      padding: 40px 0;
     }
   }
 
@@ -408,77 +362,177 @@ a:hover {
 <body>
 
 
- <div class="bg-video-wrap">
-  <video src="assets/img/gcosystem.mp4" loop muted autoplay>
-  </video>
-  <div class="overlay">
+  <header class="main-header position-absolute w-100">
+    <nav class="navbar navbar-expand-xl navbar-dark sticky-header">
+      <div class="container d-flex align-items-center justify-content-lg-between position-relative">
+        <a href="index.html" class="navbar-brand d-flex align-items-center mb-md-0 text-decoration-none py-0">
+          <img width="70" src="assets/img/logo-white.png" alt="logo" class="img-fluid logo-white" />
+          <img width="60" src="assets/img/logo.png" alt="logo" class="img-fluid logo-color" />
+        </a>
+        <a class="navbar-toggler position-absolute right-0 border-0" href="#offcanvasWithBackdrop" role="button">
+          <span class="far fa-bars" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop" aria-controls="offcanvasWithBackdrop"></span>
+        </a>
+        <div class="clearfix"></div>
+        <div class="collapse navbar-collapse justify-content-start">
+          <ul class="nav justify-content-start main-menu">
+           <li><a href="gerp.html" class="nav-link">GERP</a></li>
+           <li><a href="gssm.html" class="nav-link">GSSM</a></li>
+           <li><a href="grms.html" class="nav-link">GRMS</a></li>
+           <li><a href="gdeliver.html" class="nav-link">GDeliver</a></li>
+         </ul>
+       </div>
+
+       <div class="collapse navbar-collapse justify-content-end">
+        <ul class="nav justify-content-end main-menu pe-4">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Services
+            </a>
+            <div class="dropdown-menu border-0 rounded-custom shadow py-0 bg-white">
+              <div class="dropdown-grid rounded-custom width-half">
+                <div class="dropdown-grid-item">
+                 <a href="cloud-services.html" class="dropdown-link">
+                  <span class="me-2"><i class="far fa-cloud"></i></span> Cloud and Infrastructutre development
+                </a>
+                <a href="web-development.html" class="dropdown-link">
+                 <span class="me-2"><i class="far fa-desktop"></i></span> Web Development
+               </a>
+               <a href="customized-solution.html" class="dropdown-link">
+                 <span class="me-2"><i class="far fa-gears"></i></span> Customized solution Consultancy
+               </a>
+               <a href="iot-solution.html" class="dropdown-link">
+                 <span class="me-2"><img width="18" src="assets/img/iot-icon.png" alt="iot"></span> IoT Solution
+               </a>
+               <a href="mobile-app.html" class="dropdown-link">
+                <span class="me-2"><i class="far fa-mobile"></i></span> Mobile App  Development
+              </a>
+
+            </div>
+          </div>
+        </div>
+      </li>
+
+      <li><a href="about-us.html" class="nav-link">About Us</a></li>
+      <li><a href="contact-us.html" class="nav-link">Contact</a></li>
+    </ul>
+  </div>
+  <div class="action-btns text-end me-5 me-lg-0 d-none d-md-block d-lg-block">
+    <a href="tel:00923222266449" class="btn btn-primary"><i class="far fa-phone me-1"></i> +92-322-2266449</a>
+  </div>
+  <!--offcanvas menu start-->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasWithBackdrop">
+    <div class="offcanvas-header d-flex align-items-center mt-4">
+      <a href="index.html" class="d-flex align-items-center mb-md-0 text-decoration-none">
+        <img width="80" src="assets/img/logo.png" alt="logo" class="img-fluid ps-2" />
+      </a>
+      <button type="button" class="close-btn text-danger" data-bs-dismiss="offcanvas" aria-label="Close">
+        <i class="far fa-close"></i>
+      </button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="nav col-12 col-md-auto justify-content-center main-menu">
+        <li><a href="gssm.html" class="nav-link">GSSM</a></li>
+        <li><a href="grms.html" class="nav-link">GRMS</a></li>
+        <li><a href="gerp.html" class="nav-link">GERP</a></li>
+        <li><a href="gfoods.html" class="nav-link">GDeliver</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Services
+          </a>
+          <div class="dropdown-menu border-0 rounded-custom shadow py-0 bg-white">
+            <div class="dropdown-grid rounded-custom width-half">
+              <div class="dropdown-grid-item">
+               <a href="cloud-services.html" class="dropdown-link">
+                <span class="me-2"><i class="far fa-cloud"></i></span> Cloud and Infrastructutre development
+              </a>
+              <a href="web-development.html" class="dropdown-link">
+               <span class="me-2"><i class="far fa-desktop"></i></span> Web Development
+             </a>
+             <a href="customized-solution.html" class="dropdown-link">
+               <span class="me-2"><i class="far fa-gears"></i></span>  Customized Solution Consultancy
+             </a>
+             <a href="iot-solution.html" class="dropdown-link">
+               <span class="me-2"><img width="18" src="assets/img/iot-icon.png" alt="iot"></span>  IoT Solution
+             </a>
+             <a href="mobile-app.html" class="dropdown-link">
+              <span class="me-2"><i class="far fa-mobile"></i></span> Mobile Application  Development
+            </a>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li><a href="about-us.html" class="nav-link">About Us</a></li>
+
+    <li><a href="contact-us.html" class="nav-link">Contact</a></li>
+
+  </ul>
+  <div class="action-btns mt-4 ps-3">
+    <a href="tel:0322-222777" class="btn btn-primary"><i class="far fa-phone me-1"></i> 0322-2227777</a>
   </div>
 </div>
+</div>
+<!--offcanvas menu end-->
+</div>
+</nav>
+</header>
 
-<div class="container">
-  <div class="row justify-content-between align-items-center">
+<section class="gcosystem">
+  <div class="bg-video-wrap">
+    <video src="assets/img/gcosystem.mp4" loop muted autoplay>
+    </video>
+    <div class="overlay">
+    </div>
+  </div>
 
-    <div class="col-md-4 col-lg-3 order-2 order-md-1">
-      <!-- GERP -->
-      <a target="_blank" href="gerp.html" class="gerp wow fadeInLeft" data-wow-delay="2s">
-        <h2 class="title wow fadeInUp left" data-wow-delay="11s">GERP</h2>
-        <h4 class="wow fadeInUp" data-wow-delay="3s">Business 
-        Mgmt. Solution</h4>
 
-        <ul class="wow fadeInUp" data-wow-delay="3.5s">
-         <li><i class="fa fa-check"></i> Accounts and Finance</li>
-         <li><i class="fa fa-check"></i> Stock and Warehousing</li>
-         <li><i class="fa fa-check"></i> Asset Management</li>
-         <li><i class="fa fa-check"></i> Project Accounting</li>
-         <li><i class="fa fa-check"></i> Production / Manufacturing</li>
-         <li><i class="fa fa-check"></i> Supply Chain</li>
-         <li><i class="fa fa-check"></i> Procurement</li>
-         <li><i class="fa fa-check"></i> HR</li>
-         <li><i class="fa fa-check"></i>CRM</li>
-       </ul>
-     </a> 
 
-     <div class="gerp-line wow fadeIn" data-wow-delay="4s"></div>   
+  <div class="container">
+    <div class="row align-items-center">
 
-     <!-- GRMS -->
+     <div class="col-md-12 mb-40">
+      <div  class="gcoh-text wow zoomIn" data-wow-delay="1s">
+       <h1>Explore Our <span class="d-block"> Gcosystem </span></h1>
+       <small>Tech Ecosystem for the corporate world</small>
+       <p>The products in our digital ecosystem help organizations manage different aspects of the business from procurement, production, and logistics to sales whether it be retail, distribution, or e-commerce channels. The Gcosystem technology suite fulfills all business requirements and saves the client the cost of integrations between multiple vendor products.</p>
 
-     <a target="_blank" href="grms.html" class="grms wow fadeInUp" data-wow-delay="8s">
-       <h2 class="title wow fadeInUp left" data-wow-delay="13s">GRMS</h2>
-       <h4 class="wow fadeInUp" data-wow-delay="8.5s">Retail Mgmt.
-       Solution</h4>
+       <div class="line wow fadeIn" data-wow-delay="2s"></div>
 
-       <ul class="wow fadeIn" data-wow-delay="8.5s">
-         <li><i class="fa fa-check"></i> Faster Billing and Invoicing</li>
-         <li><i class="fa fa-check"></i> Smooth Replenishment</li>
-         <li><i class="fa fa-check"></i> Improved Store Management</li>
-         <li><i class="fa fa-check"></i> Live Inventory View</li>
-         <li><i class="fa fa-check"></i> Better Capacity Utilization</li>
-         <li><i class="fa fa-check"></i> Shop Staff KPI</li>
-         <li><i class="fa fa-check"></i> Strategy Driven Data</li>
-         <li><i class="fa fa-check"></i> Impactful Reports</li>
-       </ul>
-     </a>
-
-     <div class="gssm-line wow fadeIn" data-wow-delay="9s"></div>
-
+     </div>
    </div>
 
 
-   <div class="col-md-4 order-1 order-md-2">
-    <div  class="gcoh-text wow fadeIn" data-wow-delay="1s">
-     <h1>Explore Our <span> Gcosystem </span></h1>
-     <p>Tach Ecosystem for the corporate world</p>
-   </div>
+
+
+   <div class="col-md-3 pb-5">
+    <!-- GERP -->
+    <a target="_blank" href="gerp.html" class="gerp wow fadeInLeft" data-wow-delay="2s">
+      <h2 class="wow fadeInUp left" data-wow-delay="2.5s">GERP</h2>
+      <h4 class="wow fadeInUp" data-wow-delay="3s">Business 
+      Mgmt. Solution</h4>
+
+      <ul class="wow fadeInUp" data-wow-delay="3.5s">
+       <li><i class="fa fa-check"></i> Accounts and Finance</li>
+       <li><i class="fa fa-check"></i> Stock and Warehousing</li>
+       <li><i class="fa fa-check"></i> Asset Management</li>
+       <li><i class="fa fa-check"></i> Project Accounting</li>
+       <li><i class="fa fa-check"></i> Production / Manufacturing</li>
+       <li><i class="fa fa-check"></i> Supply Chain</li>
+       <li><i class="fa fa-check"></i> Procurement</li>
+       <li><i class="fa fa-check"></i> HR</li>
+       <li><i class="fa fa-check"></i>CRM</li>
+     </ul>
+   </a> 
+
+   <div class="gerp-line wow fadeIn" data-wow-delay="4s"></div>   
+
  </div>
 
 
-
- <div class="col-md-4 col-lg-3 order-3 order-md-3">
-
+ <div class="col-md-3 pb-5">
 
    <!-- GSSM -->
    <a target="_blank" href="gssm.html" class="gssm wow fadeInRight" data-wow-delay="5s">
-     <h2 class="title wow fadeInUp right" data-wow-delay="12s">GSSM</h2>
+     <h2 class="wow fadeInUp" data-wow-delay="5.5s">GSSM</h2>
      <h4 class="wow fadeInUp" data-wow-delay="6.5s">Distribution 
      Mgmt. Solution</h4>
 
@@ -497,11 +551,39 @@ a:hover {
 
    <div class="grms-line wow fadeIn" data-wow-delay="7s"></div>
 
+ </div>
 
+
+ <div class="col-md-3 pb-5">
+   <!-- GRMS -->
+
+   <a target="_blank" href="grms.html" class="grms wow fadeInUp" data-wow-delay="8s">
+     <h2 class=" wow fadeInUp" data-wow-delay="8.3s">GRMS</h2>
+     <h4 class="wow fadeInUp" data-wow-delay="8.5s">Retail Mgmt.
+     Solution</h4>
+
+     <ul class="wow fadeIn" data-wow-delay="8.5s">
+       <li><i class="fa fa-check"></i> Faster Billing and Invoicing</li>
+       <li><i class="fa fa-check"></i> Smooth Replenishment</li>
+       <li><i class="fa fa-check"></i> Improved Store Management</li>
+       <li><i class="fa fa-check"></i> Live Inventory View</li>
+       <li><i class="fa fa-check"></i> Better Capacity Utilization</li>
+       <li><i class="fa fa-check"></i> Shop Staff KPI</li>
+       <li><i class="fa fa-check"></i> Strategy Driven Data</li>
+       <li><i class="fa fa-check"></i> Impactful Reports</li>
+     </ul>
+   </a>
+
+   <div class="gssm-line wow fadeIn" data-wow-delay="9s"></div>
+
+ </div>
+
+
+ <div class="col-md-3 pb-5">
 
    <!-- GDeliver -->
    <a target="_blank" href="gdeliver.html" class="gfood wow fadeInRight" data-wow-delay="9s">
-    <h2 class="title wow fadeInUp right" data-wow-delay="14s">GDeliver</h2>
+    <h2 class=" wow fadeInUp" data-wow-delay="9.3s">GDeliver</h2>
     <h4 class="wow fadeInUp" data-wow-delay="9.5s">E-Commerce 
     Solution</h4>
 
@@ -521,102 +603,143 @@ a:hover {
 
 </div>
 
-<!-- <div class="col-md-12"> -->
 
-
-<!--   
-
-    <a target="_blank" href="gerp.html" class="gerp wow zoomIn" data-wow-delay="0.5s">
-        <h2 class="title wow fadeInUp" data-wow-delay="12s">GERP</h2>
-        <h3 class="wow fadeInUp" data-wow-delay="1s">Business <br />
-        Management Solution</h3>
-
-        <ul class="wow fadeInUp" data-wow-delay="1.5s">
-         <li><i class="fa fa-check"></i> Accounts and Finance</li>
-         <li><i class="fa fa-check"></i> Stock and Warehousing</li>
-         <li><i class="fa fa-check"></i> Asset Management</li>
-         <li><i class="fa fa-check"></i> Project Accounting</li>
-         <li><i class="fa fa-check"></i> Production / Manufacturing</li>
-         <li><i class="fa fa-check"></i> Supply Chain</li>
-         <li><i class="fa fa-check"></i> Procurement</li>
-         <li><i class="fa fa-check"></i> HR</li>
-         <li><i class="fa fa-check"></i>CRM</li>
-       </ul>
-     </a>
-
-     <div class="gerp-line wow fadeIn" data-wow-delay="4.5s"></div>   
-
-   -->
-   <!-- GRMS -->
-<!--      <a target="_blank" href="grms.html" class="grms wow fadeInUp" data-wow-delay="4s">
-       <h2 class="title wow fadeInUp" data-wow-delay="14s">GRMS</h2>
-       <h4 class="wow fadeInUp" data-wow-delay="4.5s">Retail Mgmt. <br />
-       Solution</h4>
-
-       <ul class="wow fadeIn" data-wow-delay="5.5s">
-         <li><i class="fa fa-check"></i> Faster Billing and Invoicing</li>
-         <li><i class="fa fa-check"></i> Smooth Replenishment</li>
-         <li><i class="fa fa-check"></i> Improved Store Management</li>
-         <li><i class="fa fa-check"></i> Live Inventory View</li>
-         <li><i class="fa fa-check"></i> Better Capacity Utilization</li>
-         <li><i class="fa fa-check"></i> Shop Staff KPI</li>
-         <li><i class="fa fa-check"></i> Strategy Driven Data</li>
-         <li><i class="fa fa-check"></i> Impactful Reports</li>
-       </ul>
-     </a>
-   -->
-
-   <!-- GDeliver -->  
-<!--      <a target="_blank" href="gdeliver.html" class="gfood wow fadeInRight" data-wow-delay="8s">
-      <h2 class="title wow fadeInUp" data-wow-delay="16s">GDeliver</h2>
-      <h4 class="wow fadeInUp" data-wow-delay="9s">E-Commerce <br />
-      Solution</h4>
-
-      <ul class="wow fadeIn" data-wow-delay="9.5s">
-        <li><i class="fa fa-check"></i> Specialized Apps for Shop staff, <br /> Riders & Customers</li>
-        <li><i class="fa fa-check"></i> Quick Order Booking</li>
-        <li><i class="fa fa-check"></i> Reduced Delivery Times</li>
-        <li><i class="fa fa-check"></i> Better Customer Satisfaction</li>
-        <li><i class="fa fa-check"></i> Better Stakeholder Communication</li>
-        <li><i class="fa fa-check"></i> Live Inventory View</li>
-        <li><i class="fa fa-check"></i> Reduced Order Cancellations</li>
-        <li><i class="fa fa-check"></i> Order Status Tracking</li>
-      </ul> 
-    </a>
-
-    <div class="gfood-line wow fadeIn" data-wow-delay="8.5s"></div>
-
-  -->
-  <!-- GSSM -->
-<!--     <a target="_blank" href="gssm.html" class="gssm wow fadeInLeft" data-wow-delay="11s">
-     <h2 class="title wow fadeInUp" data-wow-delay="18s">GSSM</h2>
-     <h4 class="wow fadeInUp" data-wow-delay="11.5s">Distribution <br />
-     Management Solution</h4>
-
-     <ul class="wow fadeIn" data-wow-delay="12s">
-       <li><i class="fa fa-check"></i> Geo-tagging & Geo Fencing</li>
-       <li><i class="fa fa-check"></i> Drill down reports</li>
-       <li><i class="fa fa-check"></i> Inventory Loss Reduction</li>
-       <li><i class="fa fa-check"></i> Optimum Production Planning</li>
-       <li><i class="fa fa-check"></i> Field Staff KPI Improvement</li>
-       <li><i class="fa fa-check"></i> Improved Credit Management</li>
-       <li><i class="fa fa-check"></i> Fake Sales Effective Controls</li>
-       <li><i class="fa fa-check"></i> Enhance Staff Engagement</li>
-       <li><i class="fa fa-check"></i> Distributor Performance</li>
-     </ul> 
-   </a>
-
-   <div class="gssm-line wow fadeIn" data-wow-delay="11.5s"></div> -->
-
-   <!-- </div> -->
-
- </div>
 </div>
+</div>
+</section>
+
+<footer class="footer-section">
+  <div class="footer-top footer-light ptb-80">
+    <div class="container">
+      <div class="row justify-content-between">
+        <div class="col-md-9 col-lg-3 mb-md-4 mb-lg-0">
+          <div class="footer-single-col pe-4">
+            <div class="footer-single-col">
+              <img src="assets/img/logo.png" alt="logo" class="img-fluid logo-white" />
+              <img width="60" src="assets/img/logo.png" alt="logo" class="img-fluid logo-color" />
+            </div>
+            <p>
+              GICOH in a Nutshell: We are passionate about delivering strong, robust software solutions to our clients. We specialize in enterprise level systems that can solve many of the problems that businesses face as they grow and adapt to a changing marketplace.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-12 col-lg-9">
+          <div class="row">
+            <div class="col-md-4 col-lg-4 mt-4 mt-md-0 mt-lg-0">
+              <div class="footer-single-col">
+                <h3>Products</h3>
+                <ul class="list-unstyled footer-nav-list mb-lg-0">
+                  <li><a href="gerp.html" class="text-decoration-none"><strong>GERP</strong> - Enterprise Resource Planning</a></li>
+                  <li><a href="gssm.html" class="text-decoration-none"><strong>GSSM</strong> - Secondary Sales Management</a></li>
+                  <li><a href="grms.html" class="text-decoration-none"><strong>GRMS</strong> - Retail Management System</a></li>
+                  <li><a href="gdeliver.html" class="text-decoration-none"><strong>GDeliver</strong> - Delivery Application</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-5 col-lg-4 mt-4 mt-md-0 mt-lg-0">
+              <div class="footer-single-col">
+                <h3>Services</h3>
+                <ul class="list-unstyled footer-nav-list mb-lg-0">
+                  <li><a href="cloud-services.html" class="text-decoration-none"><strong>CIS</strong> - Cloud and Infrastructutre </a></li>
+                  <li><a href="web-development.html" class="text-decoration-none"><strong>WDS</strong> - Web Development</a></li>
+                  <li><a href="customized-solution.html" class="text-decoration-none"><strong>CSC</strong> - Customized solution Consultancy</a></li>
+                  <li><a href="iot-solution.html" class="text-decoration-none"><strong>IoT</strong> - IoT Solution</a></li>
+                  <li><a href="mobile-app.html" class="text-decoration-none"><strong>ADS</strong> - Mobile Application Development</a></li>
+                </ul>
+              </div>
+            </div>
+
+                    <!-- <div class="col-md-4 col-lg-2 mt-4 mt-md-0 mt-lg-0">
+                      <div class="footer-single-col">
+                        <h3>Quick links</h3>
+                        <ul class="list-unstyled footer-nav-list mb-lg-0">
+                          <li><a href="javascript:void(0)" class="text-decoration-none">Career</a></li>
+                             <li><a href="about-us.html" class="text-decoration-none">About Us</a></li>
+                          <li><a href="contact-us.html" class="text-decoration-none">Contact</a></li>
+                          <li><a href="privacy-policy.html" class="text-decoration-none">Privacy Policy</a></li>
+                        </ul>
+                      </div>
+                    </div> --> 
+
+                    <div class="col-md-4 col-lg-4 mt-4 mt-md-0 mt-lg-0">
+                      <div class="footer-single-col contact-info">
+                        <h3>Contact Info</h3>
+                        <div class="d-flex mb-3">
+                          <div class="flex-shrink-0">
+                            <i class="fas fa-phone"></i>
+                          </div>
+                          <div class="flex-grow-1 ms-3">
+                            <a href="tel:+92-322-2266449">+92-322-2266449</a> <br />
+                            <a href="tel:+92-42-111-111-678"> +92-42-111-111-678 (999) </a>
+                          </div>
+                        </div>
+                        <div class="d-flex mb-3">
+                          <div class="flex-shrink-0">
+                            <i class="fas fa-comment-alt-lines"></i>
+                          </div>
+                          <div class="flex-grow-1 ms-3">
+                            <a href="mailto:sales@gicoh.com"> sales@gicoh.com </a> <br />
+                            <a href="mailto:info@gicoh.com">  info@gicoh.com </a>
+                          </div>
+                        </div>
+                        <div class="d-flex mb-md-3">
+                          <div class="flex-shrink-0">
+                            <i class="fas fa-location-dot"></i>
+                          </div>
+                          <div class="flex-grow-1 ms-3">
+                            Gicoh:
+                            Main Defence <br /> Road,
+                            Lahore, Pakistan
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--footer top end-->
+          <!--footer bottom start-->
+          <div class="footer-bottom footer-light py-3">
+            <div class="container">
+              <div class="row justify-content-between align-items-center">
+                <div class="col-md-7 col-lg-7">
+                  <div class="copyright-text">
+                    <p class="mb-lg-0 mb-md-0">&copy; 2022 GICOH . All Rights Reserved.</p>
+                  </div>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                  <div class="text-center text-lg-end text-md-end">
+                    <ul class="list-unstyled list-inline footer-social-list mb-0">
+                          <!--   <li class="list-inline-item">
+                                <a target="_blank" href="javascript:void(0)" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                              </li> -->
+                              <li class="list-inline-item">
+                                <a target="_blank" href="https://goo.gl/maps/Qir2iYzkqL9AmqQS9" class="twitter"><i class="fab fa-google"></i></a>
+                              </li>
+                              <li class="list-inline-item">
+                                <a target="_blank" href="https://www.linkedin.com/company/gicoh" class="linkedin"><i class="fab fa-linkedin"></i></a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--footer bottom end-->
+                </footer>
 
 
-<!-- Jquery -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="assets/js/custom.js"></script>
+                <!-- Jquery -->
+                <script src="assets/js/vendors/jquery-3.6.0.min.js"></script>
+                <script src="assets/js/vendors/bootstrap.bundle.min.js"></script>
+                <script src="assets/js/vendors/swiper-bundle.min.js"></script>
+                <script src="assets/js/vendors/jquery.magnific-popup.min.js"></script>
+                <script src="assets/js/vendors/parallax.min.js"></script>
+                <script src="assets/js/vendors/aos.js"></script>
+                <script src="assets/js/app.js"></script>
+                <script src="assets/js/custom.js"></script>
 
-</body>
-</html>
+              </body>
+              </html>
