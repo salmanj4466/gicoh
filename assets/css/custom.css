@@ -26,12 +26,12 @@ html {
 	font-weight: 700;
 }
 
-.swiper-button-prev, .swiper-rtl .swiper-button-next,
+/*.swiper-button-prev, .swiper-rtl .swiper-button-next,
 .swiper-button-next, .swiper-rtl .swiper-button-prev {
   background: transparent;
   box-shadow: none;
 }
-
+*/
 .work-process-list .icon-content {
   order: 2;
   text-align: left;
@@ -400,7 +400,7 @@ html {
 }
 
 
-.swiper-slide img {
+.office-address-section .swiper-slide img {
   max-width: 280px !important;
   height: 450px;
   object-fit: cover;
